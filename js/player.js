@@ -927,6 +927,8 @@ We are still here!`
   const heroMiniTitle = document.getElementById('heroMiniTitle');
   const heroMiniThumb = document.getElementById('heroMiniThumb');
   const heroMiniPlayBtn = document.getElementById('heroMiniPlayBtn');
+  const heroMiniSubtitle = document.getElementById('heroMiniSubtitle');
+  const floatingTrackInfo = document.getElementById('floatingPlayerTrackInfo');
 
   // Lyrics Modal DOM
   const lyricsModal = document.getElementById('lyricsModal');
@@ -978,6 +980,7 @@ We are still here!`
     // Update Hero Mini Player
     if (heroMiniTitle) heroMiniTitle.textContent = t.title;
     if (heroMiniThumb) heroMiniThumb.src = t.artwork;
+    if (heroMiniSubtitle) heroMiniSubtitle.textContent = "Track " + String(idx + 1).padStart(2, "0") + " • " + (t.tag || "Anthem");
 
     // Update Playlist highlight
     document.querySelectorAll('.track-item').forEach((el, i) => {
@@ -1095,6 +1098,12 @@ We are still here!`
   // Event Listeners
   if (playPauseMasterBtn) playPauseMasterBtn.addEventListener('click', togglePlayPause);
   if (heroMiniPlayBtn) heroMiniPlayBtn.addEventListener('click', togglePlayPause);
+  if (floatingTrackInfo) {
+    floatingTrackInfo.addEventListener('click', () => {
+      const musicSec = document.getElementById('music');
+      if (musicSec) musicSec.scrollIntoView({ behavior: 'smooth' });
+    });
+  }
   if (prevTrackBtn) prevTrackBtn.addEventListener('click', prevTrack);
   if (nextTrackBtn) nextTrackBtn.addEventListener('click', nextTrack);
 
