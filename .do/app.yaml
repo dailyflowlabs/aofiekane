@@ -1,0 +1,14 @@
+domains:
+- domain: aofiekane.com
+  type: PRIMARY
+- domain: www.aofiekane.com
+  type: ALIAS
+name: aofiekane
+region: nyc
+static_sites:
+- github:
+    branch: main
+    deploy_on_push: true
+    repo: dailyflowlabs/aofiekane
+  name: aofiekane-site
+  output_dir: .

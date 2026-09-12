@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aoife Kane — Official Site | Celtic Battle-Pop</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Official website for Aoife Kane. Debut album 'Hold the Line' out now. Experience the definitive Celtic Battle-Pop sound forged in thunder and ancient bog oak.">
+  <meta property="og:title" content="Aoife Kane — Hold the Line">
+  <meta property="og:description" content="Stream the debut 10-track Celtic Battle-Pop album 'Hold the Line' by Aoife Kane.">
+  <meta property="og:image" content="images/facebook_cover_hold_the_line.jpg">
+  <meta property="og:type" content="music.album">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="music/01-hold-the-line.jpg">
+  
+  <!-- Google Fonts: Cinzel Decorative, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Site Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Navigation Bar
+       ======================================================================== -->
+  <header>
+    <nav class="site-nav" id="siteNav">
+      <div class="nav-container">
+        <a href="#" class="nav-brand">
+          <svg class="brand-knot" viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+          </svg>
+          <span class="brand-text">AOIFE KANE</span>
+        </a>
+
+        <div class="nav-links" id="navMenu">
+          <a href="#music" class="nav-link">Music</a>
+          <a href="#gallery" class="nav-link">Visuals</a>
+          <a href="#story" class="nav-link">The Story</a>
+          <a href="#tour" class="nav-link">Tour</a>
+          <a href="#vinyl" class="nav-link">Vinyl</a>
+          <a href="#join" class="nav-link">Clan</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="#music" class="btn btn-nav" id="navStreamBtn">Stream Album</a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========================================================================
+       Hero Section
+       ======================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-background">
+      <img src="images/aoife-kane-01.jpg" alt="Aoife Kane with battle braids and Celtic tartan" class="hero-bg-img">
+      <div class="hero-gradient"></div>
+      <div class="hero-mist"></div>
+      <canvas id="emberCanvas"></canvas>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        <span>Debut Album Out Now</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span>AOIFE KANE</span>
+        HOLD THE LINE
+      </h1>
+
+      <p class="hero-subtitle">
+        Celtic Battle-Pop forged in thunder, ancient bog oak, and driving bodhrán rhythms. Stand to the stone and hear the call across the mist.
+      </p>
+
+      <div class="hero-cta-group">
+        <button class="btn btn-primary btn-lg" id="heroStreamNowBtn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+          Stream Full Album
+        </button>
+        <button class="btn btn-secondary btn-lg" id="vinylOrderBtn">
+          Pre-Order Limited Vinyl
+        </button>
+      </div>
+
+      <!-- Floating Mini Player in Hero -->
+      <div class="hero-mini-player">
+        <img src="music/01-hold-the-line.jpg" alt="Album Art" class="mini-player-thumb" id="heroMiniThumb">
+        <div class="mini-player-info">
+          <div class="mini-player-title" id="heroMiniTitle">Hold the Line</div>
+          <div class="mini-player-artist">Now Playing Preview • Track 01</div>
+        </div>
+        <button class="mini-play-btn" id="heroMiniPlayBtn" aria-label="Play or pause lead single">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Music & Sound Vault Section
+       ======================================================================== -->
+  <section class="section-pad music-section" id="music">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Sound Vault</span>
+        <h2 class="section-title">HOLD THE LINE</h2>
+        <p class="section-desc">Experience the complete 10-track studio album with master lossless audio, dynamic visualizer, and complete lyrical codex.</p>
+      </div>
+
+      <div class="player-container">
+        <!-- Left: Current Track Display & Visualizer -->
+        <div class="player-art-col">
+          <div class="player-art-frame">
+            <img src="music/01-hold-the-line.jpg" alt="Now Playing Album Art" id="playerArtImg" class="player-art-img">
+            <div class="audio-active-badge" id="audioActiveBadge">
+              <span class="pulse-dot"></span>
+              <span>LIVE AUDIO</span>
+            </div>
+          </div>
+
+          <div class="visualizer-canvas-wrap">
+            <canvas id="visualizerCanvas"></canvas>
+          </div>
+        </div>
+
+        <!-- Right: Player Controls & Playlist -->
+        <div class="player-controls-col">
+          <div class="player-header-meta">
+            <div class="player-now-playing">NOW PLAYING</div>
+            <h3 class="player-track-title" id="playerTrackTitle">Hold the Line</h3>
+            <div class="player-track-artist" id="playerTrackArtist">Aoife Kane • Title Track • Lead Single</div>
+          </div>
+
+          <!-- Progress Scrubber -->
+          <div class="scrubber-wrap">
+            <div class="scrubber-track" id="scrubberTrack">
+              <div class="scrubber-fill" id="scrubberFill"></div>
+            </div>
+            <div class="time-display">
+              <span id="currentTime">0:00</span>
+              <span id="totalDuration">3:54</span>
+            </div>
+          </div>
+
+          <!-- Controls Bar -->
+          <div class="controls-bar">
+            <div class="playback-btns">
+              <button class="ctrl-btn" id="prevTrackBtn" aria-label="Previous track">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+                </svg>
+              </button>
+              
+              <button class="play-pause-master-btn" id="playPauseMasterBtn" aria-label="Play or Pause">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </button>
+
+              <button class="ctrl-btn" id="nextTrackBtn" aria-label="Next track">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+                </svg>
+              </button>
+
+              <button class="ctrl-btn" id="loopTrackBtn" aria-label="Loop current track">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/>
+                </svg>
+              </button>
+            </div>
+
+            <div class="secondary-controls">
+              <button class="btn btn-lyrics" id="openLyricsBtn">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M19 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h4l3 3 3-3h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H7v-2h10v2zm0-3H7V9h10v2zm0-3H7V6h10v2z"/>
+                </svg>
+                Lyrics
+              </button>
+
+              <div class="volume-slider-wrap">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+                </svg>
+                <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.01" value="0.85" aria-label="Volume">
+              </div>
+            </div>
+          </div>
+
+          <!-- Playlist Items -->
+          <div class="playlist-card">
+            <div class="playlist-header">
+              <span>Tracklist</span>
+              <span>10 Anthems</span>
+            </div>
+            <div class="playlist-items" id="playlistContainer">
+              <!-- Dynamically populated by player.js -->
+            </div>
+          </div>
+
+          <!-- Native Audio Engine -->
+          <audio id="mainAudio" preload="metadata"></audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Visuals & Gallery Section
+       ======================================================================== -->
+  <section class="section-pad gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Visual Archives</span>
+        <h2 class="section-title">THE CLAN REBELLION</h2>
+        <p class="section-desc">Portraits from the Connemara mist, the ancient stone circles, and the dawn vigil.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="images/aoife-kane-02.jpg" alt="Aoife Kane with braided battle hair and war paint" class="gallery-card-img">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-title">The First Watch</div>
+            <div class="gallery-card-tag">Connemara Mist • 2026</div>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/aoife-kane-03.jpg" alt="Aoife Kane holding Celtic battle banner" class="gallery-card-img">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-title">Stand to the Stone</div>
+            <div class="gallery-card-tag">Granite Circle Session</div>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/aoife-kane-04.jpg" alt="Aoife Kane in emerald wool cloak" class="gallery-card-img">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-title">Blood on the Heather</div>
+            <div class="gallery-card-tag">Highland Ridge Archive</div>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/aoife-kane-05.jpg" alt="Aoife Kane at the sacred well" class="gallery-card-img">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-title">The River Knows</div>
+            <div class="gallery-card-tag">Shannon Estuary</div>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/aoife-kane-06.jpg" alt="Aoife Kane with bodhrán and leather arm guards" class="gallery-card-img">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-title">Bones in the Peat</div>
+            <div class="gallery-card-tag">Drum Fire Sessions</div>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/aoife-kane-07.jpg" alt="Aoife Kane looking over stormy coastline" class="gallery-card-img">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-title">Call the Clans</div>
+            <div class="gallery-card-tag">Cliffs of Moher</div>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/aoife-kane-08.jpg" alt="Aoife Kane under night sky with burning torches" class="gallery-card-img">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-title">We Are Still Here</div>
+            <div class="gallery-card-tag">The Grand Solstice</div>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/aoife_album_cover_hold_the_line.jpg" alt="Official Master Album Cover" class="gallery-card-img">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-title">Hold The Line</div>
+            <div class="gallery-card-tag">Master 3000x3000px Artwork</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Story / Lore Section
+       ======================================================================== -->
+  <section class="section-pad story-section" id="story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-img-wrap">
+          <img src="images/aoife-kane-11.jpg" alt="Aoife Kane overlooking the Atlantic" class="story-img">
+          <div class="story-quote-card">
+            <div class="story-quote-text">“Courage is not a quiet thing. It is the bodhrán in the chest, the roar across the mist, the refusal to yield an inch of sacred ground.”</div>
+            <div class="story-quote-author">— Aoife Kane</div>
+          </div>
+        </div>
+
+        <div class="story-text-content">
+          <span class="section-tag">The Heritage</span>
+          <h3>THE BATTLE-POP MANIFESTO</h3>
+          <p>
+            Aoife Kane didn't set out to make ordinary pop music. Raised among the wind-battered crags and ancient stone circles of the Irish west coast, she grew up steeped in the living pulse of traditional reels, uilleann pipe laments, and Gaelic rebellion hymns.
+          </p>
+          <p>
+            When stadium production meets ancient fire, the result is <strong>Celtic Battle-Pop</strong>: driving 120-BPM bodhrán stomps layered under modern punchy kick-drums, lightning-fast fiddle hooks cutting through massive synth basslines, and soaring anthemic vocals built for 50,000 voices singing in unison.
+          </p>
+          <p>
+            <em>Hold the Line</em> is a ten-chapter war cry of resilience, brotherhood, and unbroken heritage. Every note was tuned in the Dorian mode, echoing melodies that have survived centuries of storm and fire.
+          </p>
+          <div style="margin-top: 2rem;">
+            <a href="#music" class="btn btn-primary">Listen to the Journey</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Tour & Live Section
+       ======================================================================== -->
+  <section class="section-pad tour-section" id="tour">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Live in the Arena</span>
+        <h2 class="section-title">THE 2026 WORLD TOUR</h2>
+        <p class="section-desc">Experience Celtic Battle-Pop live. Uncompromising energy, full pipe and bodhrán ensemble, and stadium thunder.</p>
+      </div>
+
+      <div class="tour-list">
+        <div class="tour-card">
+          <div class="tour-date">OCT 14, 2026</div>
+          <div>
+            <div class="tour-city">Dublin, Ireland</div>
+            <div class="tour-venue">3Arena</div>
+          </div>
+          <div>
+            <span class="badge badge-gold">Clan Pre-Sale</span>
+          </div>
+          <button class="btn btn-secondary btn-tour-rsvp" data-city="Dublin" data-venue="3Arena" data-date="OCT 14, 2026">RSVP Tickets</button>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-date">OCT 18, 2026</div>
+          <div>
+            <div class="tour-city">Glasgow, Scotland</div>
+            <div class="tour-venue">OVO Hydro</div>
+          </div>
+          <div>
+            <span class="badge badge-gold">Clan Pre-Sale</span>
+          </div>
+          <button class="btn btn-secondary btn-tour-rsvp" data-city="Glasgow" data-venue="OVO Hydro" data-date="OCT 18, 2026">RSVP Tickets</button>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-date">OCT 22, 2026</div>
+          <div>
+            <div class="tour-city">London, UK</div>
+            <div class="tour-venue">Alexandra Palace</div>
+          </div>
+          <div>
+            <span class="badge badge-emerald">On Sale Soon</span>
+          </div>
+          <button class="btn btn-secondary btn-tour-rsvp" data-city="London" data-venue="Alexandra Palace" data-date="OCT 22, 2026">RSVP Tickets</button>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-date">NOV 05, 2026</div>
+          <div>
+            <div class="tour-city">Boston, MA</div>
+            <div class="tour-venue">TD Garden</div>
+          </div>
+          <div>
+            <span class="badge badge-emerald">On Sale Soon</span>
+          </div>
+          <button class="btn btn-secondary btn-tour-rsvp" data-city="Boston" data-venue="TD Garden" data-date="NOV 05, 2026">RSVP Tickets</button>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-date">NOV 09, 2026</div>
+          <div>
+            <div class="tour-city">New York, NY</div>
+            <div class="tour-venue">Radio City Music Hall</div>
+          </div>
+          <div>
+            <span class="badge badge-emerald">On Sale Soon</span>
+          </div>
+          <button class="btn btn-secondary btn-tour-rsvp" data-city="New York" data-venue="Radio City Music Hall" data-date="NOV 09, 2026">RSVP Tickets</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Vinyl & Physical Edition Section
+       ======================================================================== -->
+  <section class="section-pad vinyl-section" id="vinyl">
+    <div class="container">
+      <div class="vinyl-box">
+        <div class="vinyl-art-wrap">
+          <div class="vinyl-sleeve">
+            <img src="music/01-hold-the-line.jpg" alt="Hold The Line Vinyl Cover">
+          </div>
+          <div class="vinyl-disc">
+            <div class="vinyl-label">AOIFE KANE</div>
+          </div>
+        </div>
+
+        <div class="vinyl-content">
+          <span class="section-tag">Limited Physical Pressing</span>
+          <h3>HOLD THE LINE — FIRST EDITION</h3>
+          <div class="vinyl-price">$38.00 USD</div>
+          <p class="vinyl-desc">
+            Heavyweight 180-gram Emerald Smoke & Ember Gold splatter wax pressed at Pallas Germany. Deluxe gatefold package featuring embossed gold-foil Celtic knotwork, a 16-page lyric codex with exclusive photography, and a hand-numbered art print signed by Aoife Kane.
+          </p>
+          <div>
+            <button class="btn btn-primary btn-lg" onclick="AoifeModals.open('Collector’s Vinyl Edition', '<p style=\'margin-bottom:1rem;\'><strong>Hold the Line — Limited Gatefold Edition</strong></p><p style=\'color:var(--text-secondary); font-size:0.95rem; margin-bottom:1.5rem;\'>Heavyweight 180g Emerald Smoke & Ember Gold splatter vinyl. Includes 16-page Celtic manuscript art book and hand-numbered track certificate.</p><div style=\'text-align:center;\'><button class=\'btn btn-primary\' onclick=\'alertConfirmModal()\'>Proceed to Order</button></div>');">
+              Pre-Order Collector's Vinyl
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Newsletter / Join The Clan Section
+       ======================================================================== -->
+  <section class="section-pad join-section" id="join">
+    <div class="container" style="max-width: 720px; text-align: center;">
+      <span class="section-tag">The Inner Circle</span>
+      <h2 class="section-title">JOIN THE CLAN</h2>
+      <p class="section-desc" style="margin-bottom: 2.2rem;">
+        Receive confidential pre-sale codes, unreleased acoustic stems, and secret gathering notices directly from Aoife Kane.
+      </p>
+
+      <form id="newsletterForm" style="display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: center;">
+        <input type="email" id="newsletterEmail" required placeholder="Enter your email address..." style="flex: 1; min-width: 280px; padding: 1rem 1.4rem; border-radius: var(--radius-pill); border: 1px solid var(--border-gold); background: rgba(0,0,0,0.6); color: #fff; font-size: 1rem; outline: none;">
+        <button type="submit" class="btn btn-primary" style="padding: 1rem 2rem;">Stand With Us</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>AOIFE KANE</h4>
+          <p>
+            Definitive Celtic Battle-Pop. Ancient folklore amplified with stadium power and unwavering heritage.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h5>NAVIGATION</h5>
+          <ul class="footer-links">
+            <li><a href="#music">Sound Vault</a></li>
+            <li><a href="#gallery">Visual Archives</a></li>
+            <li><a href="#story">The Lore</a></li>
+            <li><a href="#tour">Live Dates</a></li>
+            <li><a href="#vinyl">Physical Store</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <h5>FOLLOW AOIFE</h5>
+          <ul class="footer-links">
+            <li><a href="https://facebook.com/AoifeKaneOfficial" target="_blank" rel="noopener">Facebook Page</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://spotify.com" target="_blank" rel="noopener">Spotify</a></li>
+            <li><a href="https://apple.com" target="_blank" rel="noopener">Apple Music</a></li>
+            <li><a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Aoife Kane. All rights reserved. Daily Flow Labs.</div>
+        <div style="color: var(--emerald-bright);">aofiekane.com</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       Custom Modals (Complies with Rule: NO alert/confirm dialogs)
+       ======================================================================== -->
+  <!-- Lyrics Modal -->
+  <div class="modal-overlay" id="lyricsModal">
+    <div class="custom-modal">
+      <div class="modal-header">
+        <h4 class="modal-title" id="lyricsModalTitle">Track Lyrics</h4>
+        <button class="modal-close-btn" data-modal-close aria-label="Close modal">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="lyrics-text" id="lyricsModalContent"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-modal-close>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- General Custom Interactive Modal -->
+  <div class="modal-overlay" id="customModal">
+    <div class="custom-modal">
+      <div class="modal-header">
+        <h4 class="modal-title" id="customModalTitle">Notice</h4>
+        <button class="modal-close-btn" data-modal-close aria-label="Close modal">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body" id="customModalBody"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/player.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
