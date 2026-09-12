@@ -166,7 +166,7 @@
           body: JSON.stringify({
             email: email,
             name: 'Clan Member',
-            source: 'aofiekane.com',
+            source: 'aoifekanemusic.com',
             metadata: {
               artist: 'Aoife Kane',
               album: 'Hold the Line',
@@ -183,7 +183,7 @@
             `<div style="text-align:center; padding:1rem 0;">
                <div style="color:var(--emerald-bright); font-size:2rem; margin-bottom:1rem;">⚔️</div>
                <p style="margin-bottom:1rem; font-size:1.15rem; color:#fff;">Welcome to the Clan, <strong>${email}</strong>.</p>
-               <p style="color:var(--text-secondary); font-size:0.96rem; line-height:1.7; max-width:480px; margin:0 auto 1.5rem;">A confirmation raven has been sent to your inbox. Confirm your email to receive early access codes, exclusive limited vinyl releases, and unreleased studio stems.</p>
+               <p style="color:var(--text-secondary); font-size:0.96rem; line-height:1.7; max-width:480px; margin:0 auto 1.5rem;">A confirmation raven has been sent to your inbox. Confirm your email to receive early access codes, exclusive merch drops, and unreleased studio stems.</p>
                <button class="btn btn-primary" data-modal-close onclick="AoifeModals.close()">Stand Fast</button>
              </div>`
           );
@@ -216,15 +216,8 @@
     });
   }
 
-  // --- 5. MERCH & VINYL MODAL ENGINE (COMPLIANT WITH CUSTOM MODAL RULES) ---
+  // --- 5. MERCH MODAL ENGINE (COMPLIANT WITH CUSTOM MODAL RULES) ---
   const MERCH_DATA = {
-    vinyl_12: {
-      title: "Hold the Line — 12\" Collector's Vinyl",
-      price: 38,
-      sizes: null,
-      desc: "Limited 180g Emerald Smoke & Ember Gold wax. Includes full-color Celtic manuscript art book and lossless digital album master.",
-      tag: "Limited First Edition Pressing"
-    },
     battle_tee: {
       title: "Vintage Washed Battle Tee",
       price: 34,

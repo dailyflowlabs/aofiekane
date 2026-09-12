@@ -1103,105 +1103,8 @@ button {
 }
 
 /* ==========================================================================
-   Vinyl & Merch Section
+   Clan Merch Section
    ========================================================================== */
-.vinyl-box {
-  background: radial-gradient(circle at center, rgba(16, 185, 129, 0.12) 0%, var(--bg-surface) 75%);
-  border: 1px solid var(--border-gold);
-  border-radius: var(--radius-lg);
-  padding: 4.5rem;
-  display: grid;
-  grid-template-columns: 1fr 1.25fr;
-  gap: 4.5rem;
-  align-items: center;
-  margin-bottom: 4.5rem;
-  overflow: hidden;
-}
-
-.vinyl-art-wrap {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.vinyl-sleeve {
-  width: 82%;
-  aspect-ratio: 1/1;
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.9);
-  position: relative;
-  z-index: 2;
-}
-
-.vinyl-sleeve img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.vinyl-disc {
-  position: absolute;
-  right: -5%;
-  width: 76%;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  background: radial-gradient(circle at center, #0a0a0a 30%, #064e3b 70%, #000000 100%);
-  border: 4px solid #000;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  animation: vinylSpin 15s linear infinite paused;
-  transition: right 0.4s ease;
-}
-
-.vinyl-box:hover .vinyl-disc {
-  animation-play-state: running;
-  right: -12%;
-}
-
-@keyframes vinylSpin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.vinyl-label {
-  width: 32%;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  background: var(--gold-accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-size: 0.68rem;
-  font-weight: 700;
-  color: #060908;
-}
-
-.vinyl-content h3 {
-  font-size: 2.6rem;
-  margin-bottom: 0.9rem;
-  line-height: 1.15;
-}
-
-.vinyl-price {
-  font-family: var(--font-heading);
-  font-size: 1.7rem;
-  font-weight: 700;
-  color: var(--emerald-bright);
-  margin-bottom: 1.4rem;
-}
-
-.vinyl-desc {
-  color: var(--text-secondary);
-  font-size: 1.05rem;
-  margin-bottom: 2.2rem;
-  line-height: 1.75;
-}
 
 /* Merch Apparel & Relics Grid */
 .merch-subheading-wrap {
@@ -1588,17 +1491,6 @@ button {
     gap: 3.5rem;
   }
 
-  .vinyl-box {
-    grid-template-columns: 1fr;
-    gap: 3.5rem;
-    padding: 3rem 2rem;
-    text-align: center;
-  }
-
-  .vinyl-art-wrap {
-    max-width: 380px;
-    margin: 0 auto;
-  }
 }
 
 @media (max-width: 900px) {
@@ -1765,35 +1657,6 @@ button {
     width: 70px;
   }
 
-  /* Vinyl Box Mobile */
-  .vinyl-box {
-    padding: 2rem 1.25rem;
-    gap: 2rem;
-  }
-
-  .vinyl-art-wrap {
-    max-width: 220px;
-  }
-
-  .vinyl-content h3 {
-    font-size: 1.65rem;
-  }
-
-  .vinyl-price {
-    font-size: 1.35rem;
-    margin-bottom: 1rem;
-  }
-
-  .vinyl-desc {
-    font-size: 0.92rem;
-    margin-bottom: 1.6rem;
-    line-height: 1.6;
-  }
-
-  .vinyl-content .btn {
-    width: 100%;
-    justify-content: center;
-  }
 
   /* Story Quote Card */
   .story-quote-card {

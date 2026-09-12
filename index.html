@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script>
+    if (window.location.hostname.includes('aofiekane.com')) {
+      window.location.replace('https://aoifekanemusic.com' + window.location.pathname + window.location.search + window.location.hash);
+    }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aoife Kane — Official Site | Celtic Battle-Pop</title>
   
@@ -43,7 +48,7 @@
           <a href="#music" class="nav-link">Music</a>
           <a href="#gallery" class="nav-link">Visuals</a>
           <a href="#story" class="nav-link">The Story</a>
-          <a href="#merch" class="nav-link">Merch & Vinyl</a>
+          <a href="#merch" class="nav-link">Merch</a>
           <a href="#join" class="nav-link">Clan</a>
           <a href="#music" class="btn-nav nav-drawer-btn nav-link">Stream Full Album</a>
         </div>
@@ -93,9 +98,9 @@
           </svg>
           Stream Full Album
         </button>
-        <button class="btn btn-secondary btn-lg" id="vinylOrderBtn">
-          Pre-Order Limited Vinyl
-        </button>
+        <a href="#merch" class="btn btn-secondary btn-lg">
+          Explore Clan Merch
+        </a>
       </div>
     </div>
   </section>
@@ -343,44 +348,12 @@
   <!-- ========================================================================
        Merch & Physical Edition Vault Section
        ======================================================================== -->
-  <section class="section-pad vinyl-section" id="merch">
+  <section class="section-pad merch-section" id="merch">
     <div class="container">
       <div class="section-header" style="margin-bottom: 3.5rem;">
-        <span class="section-tag">Physical Relics & Apparel</span>
+        <span class="section-tag">Ceremonial Relics & Apparel</span>
         <h2 class="section-title">THE CLAN BATTLE VAULT</h2>
-        <p class="section-desc">Limited edition heavyweight vinyl, ceremonial apparel, and archival relics. Printed and pressed on demand with worldwide dispatch.</p>
-      </div>
-
-      <!-- Hero Vinyl Edition Box -->
-      <div class="vinyl-box">
-        <div class="vinyl-art-wrap">
-          <div class="vinyl-sleeve">
-            <img src="music/01-hold-the-line.jpg" alt="Hold The Line Vinyl Cover">
-          </div>
-          <div class="vinyl-disc">
-            <div class="vinyl-label">AOIFE KANE</div>
-          </div>
-        </div>
-
-        <div class="vinyl-content">
-          <span class="section-tag">Limited First Edition Pressing</span>
-          <h3>HOLD THE LINE — 12" VINYL</h3>
-          <div class="vinyl-price">$38.00 USD</div>
-          <p class="vinyl-desc">
-            Heavyweight 180-gram Emerald Smoke & Ember Gold splatter wax. Deluxe gatefold package featuring embossed gold-foil Celtic knotwork, 16-page lyric codex with exclusive photography, and hand-numbered art print.
-          </p>
-          <div>
-            <button class="btn btn-primary btn-lg" onclick="openMerchModal('vinyl_12')">
-              Pre-Order Collector's Vinyl
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Merch Apparel & Relics Grid -->
-      <div class="merch-subheading-wrap">
-        <span class="section-tag">Ceremonial Merch & Wearables</span>
-        <h3 style="font-size: 1.9rem; margin-top: 0.5rem; color: #fff;">OFFICIAL CLAN ATTIRE</h3>
+        <p class="section-desc">Official ceremonial apparel, archival fine art prints, and clan relics. Printed and fulfilled on demand with worldwide dispatch.</p>
       </div>
 
       <div class="merch-grid">
@@ -504,7 +477,7 @@
             <li><a href="#music">Sound Vault</a></li>
             <li><a href="#gallery">Visual Archives</a></li>
             <li><a href="#story">The Lore</a></li>
-            <li><a href="#vinyl">Physical Store</a></li>
+            <li><a href="#merch">Clan Merch</a></li>
             <li><a href="#join">Join the Clan</a></li>
           </ul>
         </div>
