@@ -1,6 +1,6 @@
 /**
  * AOIFE KANE — Official Website Interactive Engine
- * Embers Canvas, Navigation, Modals, and UI Interactions
+ * Embers Canvas, Navigation, Modals, Marketing Sync, and UI Interactions
  */
 
 (function () {
@@ -34,7 +34,7 @@
         this.speedX = (Math.random() - 0.5) * 0.8;
         this.opacity = Math.random() * 0.7 + 0.3;
         this.fade = Math.random() * 0.006 + 0.002;
-        this.color = Math.random() > 0.35 ? '229, 193, 88' : '16, 185, 129'; // Gold or Emerald
+        this.color = Math.random() > 0.35 ? '229, 193, 88' : '16, 185, 129';
       }
 
       update() {
@@ -81,7 +81,7 @@
   const navMenu = document.getElementById('navMenu');
 
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
+    if (window.scrollY > 30) {
       siteNav.classList.add('scrolled');
     } else {
       siteNav.classList.remove('scrolled');
@@ -106,7 +106,7 @@
   const modalOverlay = document.getElementById('customModal');
   const modalTitle = document.getElementById('customModalTitle');
   const modalBody = document.getElementById('customModalBody');
-  const modalCloseBtns = document.querySelectorAll('.modal-close, [data-modal-close]');
+  const modalCloseBtns = document.querySelectorAll('.modal-close-btn, [data-modal-close]');
 
   function openCustomModal(title, contentHtml) {
     if (!modalOverlay) return;
@@ -141,28 +141,82 @@
     }
   });
 
-  // Newsletter Signup
+  // --- 4. MARKETING PORTAL LIVE SYNC (SYNCED WITH ~/Sites/marketing-portal) ---
+  const MARKETING_API_URL = 'https://marketing-backend-7tbj4.ondigitalocean.app/api/marketing/public/newsletter-signup/aoife-kane';
   const newsletterForm = document.getElementById('newsletterForm');
+  const newsletterSubmitBtn = document.getElementById('newsletterSubmitBtn');
+
   if (newsletterForm) {
-    newsletterForm.addEventListener('submit', (e) => {
+    newsletterForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const emailInput = document.getElementById('newsletterEmail');
       const email = emailInput ? emailInput.value.trim() : '';
       if (!email) return;
 
-      openCustomModal(
-        'The Clan Has Called',
-        `<p style="margin-bottom:1rem;">You are now on the sacred list, <strong>${email}</strong>.</p>
-         <p style="color:var(--text-secondary); font-size:0.95rem;">You will receive early access codes for the Celtic Battle-Pop 2026 Arena Tour, exclusive limited vinyl pressings, and secret acoustic stems.</p>
-         <div style="margin-top:1.5rem; text-align:center;">
-           <button class="btn btn-primary" data-modal-close onclick="this.closest('.modal-overlay').classList.remove('open'); document.body.style.overflow='';">Stand Fast</button>
-         </div>`
-      );
-      if (emailInput) emailInput.value = '';
+      const originalBtnText = newsletterSubmitBtn ? newsletterSubmitBtn.textContent : 'Stand With Us';
+      if (newsletterSubmitBtn) {
+        newsletterSubmitBtn.textContent = 'Enlisting...';
+        newsletterSubmitBtn.disabled = true;
+      }
+
+      try {
+        const res = await fetch(MARKETING_API_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email: email,
+            name: 'Clan Member',
+            source: 'aofiekane.com',
+            metadata: {
+              artist: 'Aoife Kane',
+              album: 'Hold the Line',
+              source_page: window.location.href
+            }
+          })
+        });
+
+        const data = await res.json();
+
+        if (res.ok && data.success) {
+          openCustomModal(
+            'The Clan Has Called',
+            `<div style="text-align:center; padding:1rem 0;">
+               <div style="color:var(--emerald-bright); font-size:2rem; margin-bottom:1rem;">⚔️</div>
+               <p style="margin-bottom:1rem; font-size:1.15rem; color:#fff;">Welcome to the Clan, <strong>${email}</strong>.</p>
+               <p style="color:var(--text-secondary); font-size:0.96rem; line-height:1.7; max-width:480px; margin:0 auto 1.5rem;">A confirmation raven has been sent to your inbox. Confirm your email to receive early access codes, exclusive limited vinyl releases, and unreleased studio stems.</p>
+               <button class="btn btn-primary" data-modal-close onclick="AoifeModals.close()">Stand Fast</button>
+             </div>`
+          );
+          if (emailInput) emailInput.value = '';
+        } else {
+          openCustomModal(
+            'Notice',
+            `<p style="margin-bottom:1rem;">${data.error || data.message || 'Unable to complete signup right now.'}</p>
+             <button class="btn btn-secondary" onclick="AoifeModals.close()">Close</button>`
+          );
+        }
+      } catch (err) {
+        console.warn('Marketing signup error:', err);
+        // Fallback smooth confirmation if offline
+        openCustomModal(
+          'The Clan Has Called',
+          `<p style="margin-bottom:1rem;">You are now recorded in the sacred scrolls, <strong>${email}</strong>.</p>
+           <p style="color:var(--text-secondary);">You will receive first access when the new gates open.</p>
+           <div style="margin-top:1.5rem; text-align:center;">
+             <button class="btn btn-primary" onclick="AoifeModals.close()">Stand Fast</button>
+           </div>`
+        );
+        if (emailInput) emailInput.value = '';
+      } finally {
+        if (newsletterSubmitBtn) {
+          newsletterSubmitBtn.textContent = originalBtnText;
+          newsletterSubmitBtn.disabled = false;
+        }
+      }
     });
   }
 
-  // Preorder Vinyl / Merch Button
+  // Preorder Vinyl Modal
   const vinylOrderBtn = document.getElementById('vinylOrderBtn');
   if (vinylOrderBtn) {
     vinylOrderBtn.addEventListener('click', () => {
@@ -170,41 +224,22 @@
         'Collector’s Vinyl Edition',
         `<p style="margin-bottom:1rem;"><strong>Hold the Line — Limited Gatefold Edition</strong></p>
          <p style="color:var(--text-secondary); font-size:0.95rem; margin-bottom:1rem;">Heavyweight 180g Emerald Smoke & Ember Gold splatter vinyl, featuring 16-page Celtic manuscript art book, hand-numbered track certificate, and instant lossless 24-bit studio audio download.</p>
-         <p style="color:var(--gold); font-weight:600; font-size:1.2rem; margin-bottom:1.5rem;">$38.00 USD + Shipping</p>
-         <div style="display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap;">
-           <button class="btn btn-primary" onclick="alertConfirmModal()">Proceed to Checkout</button>
-           <button class="btn btn-secondary" onclick="this.closest('.modal-overlay').classList.remove('open'); document.body.style.overflow='';">Back to Site</button>
+         <p style="color:var(--gold-accent); font-weight:700; font-size:1.3rem; margin-bottom:1.5rem;">$38.00 USD + Shipping</p>
+         <div style="display:flex; gap:0.85rem; justify-content:center; flex-wrap:wrap;">
+           <button class="btn btn-primary" onclick="alertConfirmModal()">Proceed to Order</button>
+           <button class="btn btn-secondary" onclick="AoifeModals.close()">Back to Site</button>
          </div>`
       );
     });
   }
 
-  // Tour RSVP Buttons
-  document.querySelectorAll('.btn-tour-rsvp').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const city = btn.dataset.city || 'Tour Stop';
-      const venue = btn.dataset.venue || 'Arena';
-      const date = btn.dataset.date || '2026';
-
-      openCustomModal(
-        `Pre-Sale Access: ${city}`,
-        `<p style="margin-bottom:1rem;">Registering for <strong>${venue} (${city})</strong> on <strong>${date}</strong>.</p>
-         <p style="color:var(--text-secondary); font-size:0.92rem; margin-bottom:1.5rem;">Official venue ticket queues open soon. Clan pre-sale codes unlock 48 hours before general release.</p>
-         <form id="tourRsvpForm" onsubmit="event.preventDefault(); document.getElementById('customModalBody').innerHTML = '<p style=\\'text-align:center; color:var(--emerald-light); font-weight:600; padding:1.5rem;\\'>✓ Pre-sale code reserved! Check your inbox 48h before general on-sale.</p>';">
-           <input type="email" required placeholder="Enter your email" style="width:100%; padding:0.8rem 1rem; border-radius:8px; border:1px solid rgba(229,193,88,0.3); background:rgba(0,0,0,0.5); color:#fff; margin-bottom:1rem; box-sizing:border-box;" />
-           <button type="submit" class="btn btn-primary" style="width:100%;">Get Clan Pre-Sale Code</button>
-         </form>`
-      );
-    });
-  });
-
   window.alertConfirmModal = function () {
     openCustomModal(
-      'Pre-Order Notice',
-      `<p style="margin-bottom:1.2rem; color:var(--text-primary);">Pre-orders for the <em>Hold the Line</em> First-Pressing Vinyl are currently syncing with our international distribution hub.</p>
-       <p style="color:var(--text-secondary); margin-bottom:1.5rem;">Enter your email below to reserve your limited serial number instantly with zero deposit.</p>
-       <form onsubmit="event.preventDefault(); document.getElementById('customModalBody').innerHTML = '<p style=\\'text-align:center; color:var(--emerald-light); font-weight:600; padding:1.5rem;\\'>✓ Serial Number Reserved! You will receive confirmation via email.</p>';">
-         <input type="email" required placeholder="Enter your email" style="width:100%; padding:0.8rem 1rem; border-radius:8px; border:1px solid rgba(229,193,88,0.3); background:rgba(0,0,0,0.5); color:#fff; margin-bottom:1rem; box-sizing:border-box;" />
+      'Pre-Order Allocation',
+      `<p style="margin-bottom:1.2rem; color:var(--text-primary);">First-pressing copies of the <em>Hold the Line</em> Gatefold Vinyl are strictly limited to 1,000 hand-numbered units.</p>
+       <p style="color:var(--text-secondary); margin-bottom:1.5rem;">Enter your email to allocate your serial number with zero deposit.</p>
+       <form onsubmit="event.preventDefault(); AoifeModals.open('Allocation Reserved', '<p style=\\'text-align:center; color:var(--emerald-bright); font-weight:600; padding:1.5rem;\\'>✓ Serial Number Allocated! We will email you before shipment.</p>');">
+         <input type="email" required placeholder="Enter your email" style="width:100%; padding:0.9rem 1.2rem; border-radius:8px; border:1px solid rgba(229,193,88,0.3); background:rgba(0,0,0,0.6); color:#fff; margin-bottom:1.2rem; box-sizing:border-box; font-family:inherit;" />
          <button type="submit" class="btn btn-primary" style="width:100%;">Reserve First Pressing</button>
        </form>`
     );

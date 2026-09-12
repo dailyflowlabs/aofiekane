@@ -16,10 +16,10 @@
   <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="music/01-hold-the-line.jpg">
   
-  <!-- Google Fonts: Cinzel Decorative, Plus Jakarta Sans -->
+  <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Site Styles -->
   <link rel="stylesheet" href="css/style.css">
@@ -33,7 +33,7 @@
     <nav class="site-nav" id="siteNav">
       <div class="nav-container">
         <a href="#" class="nav-brand">
-          <svg class="brand-knot" viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+          <svg class="brand-knot" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
             <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
           </svg>
           <span class="brand-text">AOIFE KANE</span>
@@ -43,13 +43,12 @@
           <a href="#music" class="nav-link">Music</a>
           <a href="#gallery" class="nav-link">Visuals</a>
           <a href="#story" class="nav-link">The Story</a>
-          <a href="#tour" class="nav-link">Tour</a>
           <a href="#vinyl" class="nav-link">Vinyl</a>
           <a href="#join" class="nav-link">Clan</a>
         </div>
 
         <div class="nav-actions">
-          <a href="#music" class="btn btn-nav" id="navStreamBtn">Stream Album</a>
+          <a href="#music" class="btn-nav" id="navStreamBtn">Stream Album</a>
           <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
             <span></span>
             <span></span>
@@ -115,9 +114,9 @@
   </section>
 
   <!-- ========================================================================
-       Music & Sound Vault Section
+       Music & Sound Vault Section (FULL WIDTH, DISTINCT CONTRAST BACKGROUND)
        ======================================================================== -->
-  <section class="section-pad music-section" id="music">
+  <section class="music-section" id="music">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">The Sound Vault</span>
@@ -170,7 +169,7 @@
               </button>
               
               <button class="play-pause-master-btn" id="playPauseMasterBtn" aria-label="Play or Pause">
-                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
                   <path d="M8 5v14l11-7z"/>
                 </svg>
               </button>
@@ -189,7 +188,7 @@
             </div>
 
             <div class="secondary-controls">
-              <button class="btn btn-lyrics" id="openLyricsBtn">
+              <button class="btn-lyrics" id="openLyricsBtn">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                   <path d="M19 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h4l3 3 3-3h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H7v-2h10v2zm0-3H7V9h10v2zm0-3H7V6h10v2z"/>
                 </svg>
@@ -244,10 +243,26 @@
         </div>
 
         <div class="gallery-card">
+          <img src="images/stage_singing_9x16.jpg" alt="Aoife Kane live concert performance" class="gallery-card-img">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-title">Live in the Arena</div>
+            <div class="gallery-card-tag">Hold The Line • Stadium Live</div>
+          </div>
+        </div>
+
+        <div class="gallery-card">
           <img src="images/aoife-kane-03.jpg" alt="Aoife Kane holding Celtic battle banner" class="gallery-card-img">
           <div class="gallery-card-overlay">
             <div class="gallery-card-title">Stand to the Stone</div>
             <div class="gallery-card-tag">Granite Circle Session</div>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/stage_close_9x16.jpg" alt="Aoife Kane belting into microphone" class="gallery-card-img">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-title">Thunder in the Skin</div>
+            <div class="gallery-card-tag">Live Vocal Session</div>
           </div>
         </div>
 
@@ -276,26 +291,10 @@
         </div>
 
         <div class="gallery-card">
-          <img src="images/aoife-kane-07.jpg" alt="Aoife Kane looking over stormy coastline" class="gallery-card-img">
-          <div class="gallery-card-overlay">
-            <div class="gallery-card-title">Call the Clans</div>
-            <div class="gallery-card-tag">Cliffs of Moher</div>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="images/aoife-kane-08.jpg" alt="Aoife Kane under night sky with burning torches" class="gallery-card-img">
-          <div class="gallery-card-overlay">
-            <div class="gallery-card-title">We Are Still Here</div>
-            <div class="gallery-card-tag">The Grand Solstice</div>
-          </div>
-        </div>
-
-        <div class="gallery-card">
           <img src="images/aoife_album_cover_hold_the_line.jpg" alt="Official Master Album Cover" class="gallery-card-img">
           <div class="gallery-card-overlay">
             <div class="gallery-card-title">Hold The Line</div>
-            <div class="gallery-card-tag">Master 3000x3000px Artwork</div>
+            <div class="gallery-card-tag">Master Studio Artwork</div>
           </div>
         </div>
       </div>
@@ -328,84 +327,9 @@
           <p>
             <em>Hold the Line</em> is a ten-chapter war cry of resilience, brotherhood, and unbroken heritage. Every note was tuned in the Dorian mode, echoing melodies that have survived centuries of storm and fire.
           </p>
-          <div style="margin-top: 2rem;">
+          <div style="margin-top: 2.2rem;">
             <a href="#music" class="btn btn-primary">Listen to the Journey</a>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       Tour & Live Section
-       ======================================================================== -->
-  <section class="section-pad tour-section" id="tour">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Live in the Arena</span>
-        <h2 class="section-title">THE 2026 WORLD TOUR</h2>
-        <p class="section-desc">Experience Celtic Battle-Pop live. Uncompromising energy, full pipe and bodhrán ensemble, and stadium thunder.</p>
-      </div>
-
-      <div class="tour-list">
-        <div class="tour-card">
-          <div class="tour-date">OCT 14, 2026</div>
-          <div>
-            <div class="tour-city">Dublin, Ireland</div>
-            <div class="tour-venue">3Arena</div>
-          </div>
-          <div>
-            <span class="badge badge-gold">Clan Pre-Sale</span>
-          </div>
-          <button class="btn btn-secondary btn-tour-rsvp" data-city="Dublin" data-venue="3Arena" data-date="OCT 14, 2026">RSVP Tickets</button>
-        </div>
-
-        <div class="tour-card">
-          <div class="tour-date">OCT 18, 2026</div>
-          <div>
-            <div class="tour-city">Glasgow, Scotland</div>
-            <div class="tour-venue">OVO Hydro</div>
-          </div>
-          <div>
-            <span class="badge badge-gold">Clan Pre-Sale</span>
-          </div>
-          <button class="btn btn-secondary btn-tour-rsvp" data-city="Glasgow" data-venue="OVO Hydro" data-date="OCT 18, 2026">RSVP Tickets</button>
-        </div>
-
-        <div class="tour-card">
-          <div class="tour-date">OCT 22, 2026</div>
-          <div>
-            <div class="tour-city">London, UK</div>
-            <div class="tour-venue">Alexandra Palace</div>
-          </div>
-          <div>
-            <span class="badge badge-emerald">On Sale Soon</span>
-          </div>
-          <button class="btn btn-secondary btn-tour-rsvp" data-city="London" data-venue="Alexandra Palace" data-date="OCT 22, 2026">RSVP Tickets</button>
-        </div>
-
-        <div class="tour-card">
-          <div class="tour-date">NOV 05, 2026</div>
-          <div>
-            <div class="tour-city">Boston, MA</div>
-            <div class="tour-venue">TD Garden</div>
-          </div>
-          <div>
-            <span class="badge badge-emerald">On Sale Soon</span>
-          </div>
-          <button class="btn btn-secondary btn-tour-rsvp" data-city="Boston" data-venue="TD Garden" data-date="NOV 05, 2026">RSVP Tickets</button>
-        </div>
-
-        <div class="tour-card">
-          <div class="tour-date">NOV 09, 2026</div>
-          <div>
-            <div class="tour-city">New York, NY</div>
-            <div class="tour-venue">Radio City Music Hall</div>
-          </div>
-          <div>
-            <span class="badge badge-emerald">On Sale Soon</span>
-          </div>
-          <button class="btn btn-secondary btn-tour-rsvp" data-city="New York" data-venue="Radio City Music Hall" data-date="NOV 09, 2026">RSVP Tickets</button>
         </div>
       </div>
     </div>
@@ -444,19 +368,19 @@
   </section>
 
   <!-- ========================================================================
-       Newsletter / Join The Clan Section
+       Newsletter / Join The Clan Section (SYNCED WITH MARKETING PORTAL)
        ======================================================================== -->
   <section class="section-pad join-section" id="join">
-    <div class="container" style="max-width: 720px; text-align: center;">
+    <div class="container" style="max-width: 760px; text-align: center;">
       <span class="section-tag">The Inner Circle</span>
       <h2 class="section-title">JOIN THE CLAN</h2>
-      <p class="section-desc" style="margin-bottom: 2.2rem;">
-        Receive confidential pre-sale codes, unreleased acoustic stems, and secret gathering notices directly from Aoife Kane.
+      <p class="section-desc" style="margin-bottom: 2.5rem;">
+        Receive confidential announcements, unreleased acoustic stems, and secret gathering notices directly from Aoife Kane.
       </p>
 
-      <form id="newsletterForm" style="display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: center;">
-        <input type="email" id="newsletterEmail" required placeholder="Enter your email address..." style="flex: 1; min-width: 280px; padding: 1rem 1.4rem; border-radius: var(--radius-pill); border: 1px solid var(--border-gold); background: rgba(0,0,0,0.6); color: #fff; font-size: 1rem; outline: none;">
-        <button type="submit" class="btn btn-primary" style="padding: 1rem 2rem;">Stand With Us</button>
+      <form id="newsletterForm" style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; max-width: 600px; margin: 0 auto;">
+        <input type="email" id="newsletterEmail" required placeholder="Enter your email address..." style="flex: 1; min-width: 280px; padding: 1.05rem 1.6rem; border-radius: var(--radius-pill); border: 1px solid var(--border-gold); background: rgba(0,0,0,0.65); color: #fff; font-size: 1rem; outline: none; font-family: inherit;">
+        <button type="submit" class="btn btn-primary" id="newsletterSubmitBtn" style="padding: 1.05rem 2.2rem;">Stand With Us</button>
       </form>
     </div>
   </section>
@@ -480,15 +404,15 @@
             <li><a href="#music">Sound Vault</a></li>
             <li><a href="#gallery">Visual Archives</a></li>
             <li><a href="#story">The Lore</a></li>
-            <li><a href="#tour">Live Dates</a></li>
             <li><a href="#vinyl">Physical Store</a></li>
+            <li><a href="#join">Join the Clan</a></li>
           </ul>
         </div>
 
         <div class="footer-nav">
           <h5>FOLLOW AOIFE</h5>
           <ul class="footer-links">
-            <li><a href="https://facebook.com/AoifeKaneOfficial" target="_blank" rel="noopener">Facebook Page</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61594396047655" target="_blank" rel="noopener">Facebook Page</a></li>
             <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
             <li><a href="https://spotify.com" target="_blank" rel="noopener">Spotify</a></li>
             <li><a href="https://apple.com" target="_blank" rel="noopener">Apple Music</a></li>
@@ -505,7 +429,7 @@
   </footer>
 
   <!-- ========================================================================
-       Custom Modals (Complies with Rule: NO alert/confirm dialogs)
+       Custom Modals (Rule Compliant: NO alert/confirm dialogs)
        ======================================================================== -->
   <!-- Lyrics Modal -->
   <div class="modal-overlay" id="lyricsModal">
