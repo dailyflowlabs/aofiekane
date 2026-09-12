@@ -43,7 +43,7 @@
           <a href="#music" class="nav-link">Music</a>
           <a href="#gallery" class="nav-link">Visuals</a>
           <a href="#story" class="nav-link">The Story</a>
-          <a href="#vinyl" class="nav-link">Vinyl</a>
+          <a href="#merch" class="nav-link">Merch & Vinyl</a>
           <a href="#join" class="nav-link">Clan</a>
         </div>
 
@@ -338,10 +338,17 @@
   </section>
 
   <!-- ========================================================================
-       Vinyl & Physical Edition Section
+       Merch & Physical Edition Vault Section
        ======================================================================== -->
-  <section class="section-pad vinyl-section" id="vinyl">
+  <section class="section-pad vinyl-section" id="merch">
     <div class="container">
+      <div class="section-header" style="margin-bottom: 3.5rem;">
+        <span class="section-tag">Physical Relics & Apparel</span>
+        <h2 class="section-title">THE CLAN BATTLE VAULT</h2>
+        <p class="section-desc">Limited edition heavyweight vinyl, ceremonial apparel, and archival relics. Printed and pressed on demand with worldwide dispatch.</p>
+      </div>
+
+      <!-- Hero Vinyl Edition Box -->
       <div class="vinyl-box">
         <div class="vinyl-art-wrap">
           <div class="vinyl-sleeve">
@@ -353,15 +360,103 @@
         </div>
 
         <div class="vinyl-content">
-          <span class="section-tag">Limited Physical Pressing</span>
-          <h3>HOLD THE LINE — FIRST EDITION</h3>
+          <span class="section-tag">Limited First Edition Pressing</span>
+          <h3>HOLD THE LINE — 12" VINYL</h3>
           <div class="vinyl-price">$38.00 USD</div>
           <p class="vinyl-desc">
-            Heavyweight 180-gram Emerald Smoke & Ember Gold splatter wax pressed at Pallas Germany. Deluxe gatefold package featuring embossed gold-foil Celtic knotwork, a 16-page lyric codex with exclusive photography, and a hand-numbered art print signed by Aoife Kane.
+            Heavyweight 180-gram Emerald Smoke & Ember Gold splatter wax. Deluxe gatefold package featuring embossed gold-foil Celtic knotwork, 16-page lyric codex with exclusive photography, and hand-numbered art print.
           </p>
           <div>
-            <button class="btn btn-primary btn-lg" onclick="AoifeModals.open('Collector’s Vinyl Edition', '<p style=\'margin-bottom:1rem;\'><strong>Hold the Line — Limited Gatefold Edition</strong></p><p style=\'color:var(--text-secondary); font-size:0.95rem; margin-bottom:1.5rem;\'>Heavyweight 180g Emerald Smoke & Ember Gold splatter vinyl. Includes 16-page Celtic manuscript art book and hand-numbered track certificate.</p><div style=\'text-align:center;\'><button class=\'btn btn-primary\' onclick=\'alertConfirmModal()\'>Proceed to Order</button></div>');">
+            <button class="btn btn-primary btn-lg" onclick="openMerchModal('vinyl_12')">
               Pre-Order Collector's Vinyl
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Merch Apparel & Relics Grid -->
+      <div class="merch-subheading-wrap">
+        <span class="section-tag">Ceremonial Merch & Wearables</span>
+        <h3 style="font-size: 1.9rem; margin-top: 0.5rem; color: #fff;">OFFICIAL CLAN ATTIRE</h3>
+      </div>
+
+      <div class="merch-grid">
+        <!-- Item 1: Washed Battle Tee -->
+        <div class="merch-card">
+          <div class="merch-img-wrap">
+            <img src="images/aoife_album_cover_hold_the_line.jpg" alt="Hold the Line Washed Black Tee" class="merch-img">
+            <span class="merch-badge">Best Seller</span>
+          </div>
+          <div class="merch-body">
+            <span class="merch-tag">Heavyweight 100% Cotton</span>
+            <h4 class="merch-title">Vintage Washed Battle Tee</h4>
+            <div class="merch-price-row">
+              <span class="merch-price">$34.00</span>
+              <span class="merch-fulfillment-note">USD • Made on Demand</span>
+            </div>
+            <p class="merch-desc">Mineral-washed charcoal heavyweight tee featuring the iconic album crest and runes with full album tracklist on reverse.</p>
+            <button class="btn btn-primary merch-buy-btn" onclick="openMerchModal('battle_tee')">
+              Select Size & Buy
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 2: Warrior Crop Top -->
+        <div class="merch-card">
+          <div class="merch-img-wrap">
+            <img src="images/stage_singing_9x16.jpg" alt="Clan Kane Warrior Crop Top" class="merch-img">
+            <span class="merch-badge">Signature Look</span>
+          </div>
+          <div class="merch-body">
+            <span class="merch-tag">Performance Stretch</span>
+            <h4 class="merch-title">Clan Kane Warrior Crop Top</h4>
+            <div class="merch-price-row">
+              <span class="merch-price">$28.00</span>
+              <span class="merch-fulfillment-note">USD • Made on Demand</span>
+            </div>
+            <p class="merch-desc">Signature strappy high-neck battle crop top in pitch black with gold-foil knotwork crest. Inspired by Aoife's Connemara stage look.</p>
+            <button class="btn btn-primary merch-buy-btn" onclick="openMerchModal('crop_top')">
+              Select Size & Buy
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 3: Megalith Hoodie -->
+        <div class="merch-card">
+          <div class="merch-img-wrap">
+            <img src="images/aoife-kane-02.jpg" alt="Megalith Ceremony Pullover Hoodie" class="merch-img">
+            <span class="merch-badge">Heavy Fleece</span>
+          </div>
+          <div class="merch-body">
+            <span class="merch-tag">10oz Heavyweight Fleece</span>
+            <h4 class="merch-title">Megalith Ceremony Hoodie</h4>
+            <div class="merch-price-row">
+              <span class="merch-price">$58.00</span>
+              <span class="merch-fulfillment-note">USD • Made on Demand</span>
+            </div>
+            <p class="merch-desc">Ultra-heavyweight charcoal fleece pullover with Celtic knotwork down both sleeves and double-layer hood for raw weather.</p>
+            <button class="btn btn-primary merch-buy-btn" onclick="openMerchModal('hoodie')">
+              Select Size & Buy
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 4: Archival Poster -->
+        <div class="merch-card">
+          <div class="merch-img-wrap">
+            <img src="images/aoife_album_cover_monolith.jpg" alt="Ancient Megaliths Dawn Vigil Poster" class="merch-img">
+            <span class="merch-badge">18" x 24"</span>
+          </div>
+          <div class="merch-body">
+            <span class="merch-tag">Archival Giclée Print</span>
+            <h4 class="merch-title">Megaliths Dawn Vigil Poster</h4>
+            <div class="merch-price-row">
+              <span class="merch-price">$24.00</span>
+              <span class="merch-fulfillment-note">USD • Museum Grade</span>
+            </div>
+            <p class="merch-desc">Museum-grade heavy matte archival art print of Aoife Kane standing amidst ancient stone monoliths as the Connemara mist breaks.</p>
+            <button class="btn btn-primary merch-buy-btn" onclick="openMerchModal('poster')">
+              Order Art Print
             </button>
           </div>
         </div>
