@@ -252,6 +252,13 @@
       sizes: null,
       desc: "Museum-grade heavy matte archival print of Aoife Kane standing before ancient stone monoliths as the Connemara mist rises.",
       tag: "Museum-Grade Matte Giclée"
+    },
+    mug: {
+      title: "Hold The Line Ceramic Mug (11oz)",
+      price: 18,
+      sizes: null,
+      desc: "High gloss ceramic mug with high definition Celtic battle crest. Dishwasher and microwave safe.",
+      tag: "Ceramic Relic"
     }
   };
 
