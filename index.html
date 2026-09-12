@@ -45,6 +45,7 @@
           <a href="#story" class="nav-link">The Story</a>
           <a href="#merch" class="nav-link">Merch & Vinyl</a>
           <a href="#join" class="nav-link">Clan</a>
+          <a href="#music" class="btn-nav nav-drawer-btn nav-link">Stream Full Album</a>
         </div>
 
         <div class="nav-actions">
@@ -94,22 +95,6 @@
         </button>
         <button class="btn btn-secondary btn-lg" id="vinylOrderBtn">
           Pre-Order Limited Vinyl
-        </button>
-      </div>
-
-      <!-- Persistent Floating Mini Player Widget (Fixed in corner) -->
-      <div class="persistent-floating-player" id="persistentMiniPlayer">
-        <div class="floating-player-track-info" id="floatingPlayerTrackInfo" title="Click to view full Sound Vault player">
-          <img src="music/01-hold-the-line.jpg" alt="Album Art" class="mini-player-thumb" id="heroMiniThumb">
-          <div class="mini-player-info">
-            <div class="mini-player-title" id="heroMiniTitle">Hold the Line</div>
-            <div class="mini-player-artist" id="heroMiniSubtitle">Track 01 • Lead Single</div>
-          </div>
-        </div>
-        <button class="mini-play-btn" id="heroMiniPlayBtn" aria-label="Play or pause audio">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-            <path d="M8 5v14l11-7z"/>
-          </svg>
         </button>
       </div>
     </div>
@@ -538,6 +523,24 @@
       </div>
     </div>
   </footer>
+
+  <!-- ========================================================================
+       Persistent Floating Mini Player Widget (Fixed in corner, root viewport)
+       ======================================================================== -->
+  <div class="persistent-floating-player" id="persistentMiniPlayer">
+    <div class="floating-player-track-info" id="floatingPlayerTrackInfo" title="Click to view full Sound Vault player">
+      <img src="music/01-hold-the-line.jpg" alt="Album Art" class="mini-player-thumb" id="heroMiniThumb">
+      <div class="mini-player-info">
+        <div class="mini-player-title" id="heroMiniTitle">Hold the Line</div>
+        <div class="mini-player-artist" id="heroMiniSubtitle">Track 01 • Lead Single</div>
+      </div>
+    </div>
+    <button class="mini-play-btn" id="heroMiniPlayBtn" aria-label="Play or pause audio">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+    </button>
+  </div>
 
   <!-- ========================================================================
        Custom Modals (Rule Compliant: NO alert/confirm dialogs)
