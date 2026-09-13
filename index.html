@@ -36,7 +36,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Site Styles -->
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
@@ -252,68 +252,128 @@
         </div>
       </div>
 
-      <div class="gallery-grid">
-        <div class="gallery-card">
-          <img src="images/aoife-kane-02.jpg" alt="Aoife Kane with braided battle hair and war paint" class="gallery-card-img">
-          <div class="gallery-card-overlay">
-            <div class="gallery-card-title">The First Watch</div>
-            <div class="gallery-card-tag">Connemara Mist • 2026</div>
+      <!-- Clan Rebellion Consistent Profile Carousel -->
+      <div class="clan-carousel-container" id="clanCarouselContainer">
+        <div class="clan-carousel-viewport" id="clanCarouselViewport">
+          <div class="clan-carousel-track" id="clanCarouselTrack">
+            <!-- Slide 1 -->
+            <div class="clan-carousel-slide" data-index="0" data-img="images/carousel/aoife_carousel_01_front.jpg" data-title="Thunder in the Skin" data-tag="Live Arena • Chapter I" data-desc="Center stage belting with Shure SM58 under emerald lasers">
+              <div class="clan-slide-card">
+                <img src="images/carousel/aoife_carousel_01_front.jpg" alt="Aoife Kane performing live on arena stage" class="clan-slide-img" loading="lazy">
+                <div class="clan-slide-overlay">
+                  <span class="clan-slide-badge">Live Arena • Chapter I</span>
+                  <h3 class="clan-slide-title">Thunder in the Skin</h3>
+                  <p class="clan-slide-desc">Center stage with Shure SM58 under emerald lasers</p>
+                  <button class="clan-slide-zoom-btn" aria-label="View Fullscreen">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="clan-carousel-slide" data-index="1" data-img="images/carousel/aoife_carousel_02_side.jpg" data-title="The Flame Rim" data-tag="Stage Left • Chapter II" data-desc="Dramatic 90-degree live vocal profile under firelight embers">
+              <div class="clan-slide-card">
+                <img src="images/carousel/aoife_carousel_02_side.jpg" alt="Aoife Kane side profile singing close to microphone" class="clan-slide-img" loading="lazy">
+                <div class="clan-slide-overlay">
+                  <span class="clan-slide-badge">Stage Left • Chapter II</span>
+                  <h3 class="clan-slide-title">The Flame Rim</h3>
+                  <p class="clan-slide-desc">Dramatic 90-degree live vocal profile under firelight embers</p>
+                  <button class="clan-slide-zoom-btn" aria-label="View Fullscreen">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="clan-carousel-slide" data-index="2" data-img="images/carousel/aoife_carousel_03_crowd.jpg" data-title="Hold The Line" data-tag="20,000 Voices • Chapter III" data-desc="Arena crowd clapping on beat under towering stadium flame braziers">
+              <div class="clan-slide-card">
+                <img src="images/carousel/aoife_carousel_03_crowd.jpg" alt="Aoife Kane commanding arena crowd with flame towers" class="clan-slide-img" loading="lazy">
+                <div class="clan-slide-overlay">
+                  <span class="clan-slide-badge">20,000 Voices • Chapter III</span>
+                  <h3 class="clan-slide-title">Hold The Line</h3>
+                  <p class="clan-slide-desc">Arena crowd clapping on beat under towering stadium flame braziers</p>
+                  <button class="clan-slide-zoom-btn" aria-label="View Fullscreen">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="clan-carousel-slide" data-index="3" data-img="images/carousel/aoife_carousel_04_backstage.jpg" data-title="Green Room Vigil" data-tag="Backstage Archive • Chapter IV" data-desc="Tour flight case and vintage tube amps before showtime">
+              <div class="clan-slide-card">
+                <img src="images/carousel/aoife_carousel_04_backstage.jpg" alt="Aoife Kane backstage in green room on tour flight case" class="clan-slide-img" loading="lazy">
+                <div class="clan-slide-overlay">
+                  <span class="clan-slide-badge">Backstage Archive • Chapter IV</span>
+                  <h3 class="clan-slide-title">Green Room Vigil</h3>
+                  <p class="clan-slide-desc">Tour flight case and vintage tube amps before showtime</p>
+                  <button class="clan-slide-zoom-btn" aria-label="View Fullscreen">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="clan-carousel-slide" data-index="4" data-img="images/carousel/aoife_carousel_05_flame.jpg" data-title="Raise The Green" data-tag="Pyrotechnic Climax • Chapter V" data-desc="Front catwalk command as twin flame cannons blast into the arena">
+              <div class="clan-slide-card">
+                <img src="images/carousel/aoife_carousel_05_flame.jpg" alt="Aoife Kane belting with mic raised high under flame burst" class="clan-slide-img" loading="lazy">
+                <div class="clan-slide-overlay">
+                  <span class="clan-slide-badge">Pyrotechnic Climax • Chapter V</span>
+                  <h3 class="clan-slide-title">Raise The Green</h3>
+                  <p class="clan-slide-desc">Front catwalk command as twin flame cannons blast into the arena</p>
+                  <button class="clan-slide-zoom-btn" aria-label="View Fullscreen">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="clan-carousel-slide" data-index="5" data-img="images/carousel/aoife_carousel_06_climax.jpg" data-title="Wild Desire" data-tag="Vocal Reckoning • Chapter VI" data-desc="Belting the highest note into the arena night">
+              <div class="clan-slide-card">
+                <img src="images/carousel/aoife_carousel_06_climax.jpg" alt="Aoife Kane intense vocal climax close-up" class="clan-slide-img" loading="lazy">
+                <div class="clan-slide-overlay">
+                  <span class="clan-slide-badge">Vocal Reckoning • Chapter VI</span>
+                  <h3 class="clan-slide-title">Wild Desire</h3>
+                  <p class="clan-slide-desc">Belting the highest note into the arena night</p>
+                  <button class="clan-slide-zoom-btn" aria-label="View Fullscreen">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="gallery-card">
-          <img src="images/stage_singing_9x16.jpg" alt="Aoife Kane live concert performance" class="gallery-card-img">
-          <div class="gallery-card-overlay">
-            <div class="gallery-card-title">Live in the Arena</div>
-            <div class="gallery-card-tag">Hold The Line • Stadium Live</div>
-          </div>
-        </div>
+        <!-- Carousel Navigation Controls -->
+        <button class="clan-carousel-nav clan-carousel-prev" id="clanCarouselPrev" aria-label="Previous Slide">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="clan-carousel-nav clan-carousel-next" id="clanCarouselNext" aria-label="Next Slide">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
 
-        <div class="gallery-card">
-          <img src="images/aoife-kane-03.jpg" alt="Aoife Kane holding Celtic battle banner" class="gallery-card-img">
-          <div class="gallery-card-overlay">
-            <div class="gallery-card-title">Stand to the Stone</div>
-            <div class="gallery-card-tag">Granite Circle Session</div>
-          </div>
-        </div>
+        <!-- Carousel Pagination Dots -->
+        <div class="clan-carousel-dots" id="clanCarouselDots"></div>
+      </div>
 
-        <div class="gallery-card">
-          <img src="images/stage_close_9x16.jpg" alt="Aoife Kane belting into microphone" class="gallery-card-img">
-          <div class="gallery-card-overlay">
-            <div class="gallery-card-title">Thunder in the Skin</div>
-            <div class="gallery-card-tag">Live Vocal Session</div>
+      <!-- Custom Clan Lightbox Modal (Strictly compliant with Global UI rules: zero window.alert/confirm) -->
+      <div class="clan-lightbox-modal" id="clanLightboxModal" aria-hidden="true" role="dialog">
+        <div class="clan-lightbox-backdrop" id="clanLightboxBackdrop"></div>
+        <div class="clan-lightbox-content">
+          <button class="clan-lightbox-close" id="clanLightboxClose" aria-label="Close Lightbox">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          </button>
+          <div class="clan-lightbox-media">
+            <img src="" alt="" id="clanLightboxImg" class="clan-lightbox-img">
           </div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="images/aoife-kane-04.jpg" alt="Aoife Kane in emerald wool cloak" class="gallery-card-img">
-          <div class="gallery-card-overlay">
-            <div class="gallery-card-title">Blood on the Heather</div>
-            <div class="gallery-card-tag">Highland Ridge Archive</div>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="images/aoife-kane-05.jpg" alt="Aoife Kane at the sacred well" class="gallery-card-img">
-          <div class="gallery-card-overlay">
-            <div class="gallery-card-title">The River Knows</div>
-            <div class="gallery-card-tag">Shannon Estuary</div>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="images/aoife-kane-06.jpg" alt="Aoife Kane with bodhrán and leather arm guards" class="gallery-card-img">
-          <div class="gallery-card-overlay">
-            <div class="gallery-card-title">Bones in the Peat</div>
-            <div class="gallery-card-tag">Drum Fire Sessions</div>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="images/aoife_album_cover_hold_the_line.jpg" alt="Official Master Album Cover" class="gallery-card-img">
-          <div class="gallery-card-overlay">
-            <div class="gallery-card-title">Hold The Line</div>
-            <div class="gallery-card-tag">Master Studio Artwork</div>
+          <div class="clan-lightbox-info">
+            <span class="clan-slide-badge" id="clanLightboxTag"></span>
+            <h3 class="clan-lightbox-title" id="clanLightboxTitle"></h3>
+            <p class="clan-lightbox-desc" id="clanLightboxDesc"></p>
           </div>
         </div>
       </div>
@@ -569,6 +629,6 @@
 
   <!-- Scripts -->
   <script src="js/player.js?v=2"></script>
-  <script src="js/main.js?v=3"></script>
+  <script src="js/main.js?v=4"></script>
 </body>
 </html>

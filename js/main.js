@@ -398,9 +398,212 @@
     }
   };
 
+  // --- 7. CLAN REBELLION CONSISTENT CAROUSEL & LIGHTBOX ENGINE ---
+  (function initClanCarousel() {
+    const track = document.getElementById('clanCarouselTrack');
+    const viewport = document.getElementById('clanCarouselViewport');
+    const prevBtn = document.getElementById('clanCarouselPrev');
+    const nextBtn = document.getElementById('clanCarouselNext');
+    const dotsContainer = document.getElementById('clanCarouselDots');
+    const slides = document.querySelectorAll('.clan-carousel-slide');
+
+    if (!track || !viewport || slides.length === 0) return;
+
+    let currentIndex = 0;
+    let autoPlayTimer = null;
+    let isDragging = false;
+    let startX = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+
+    // Helper: calculate visible slides based on viewport width
+    function getSlidesPerView() {
+      const w = window.innerWidth;
+      if (w <= 640) return 1;
+      if (w <= 992) return 2;
+      return 3;
+    }
+
+    function getMaxIndex() {
+      const perView = getSlidesPerView();
+      return Math.max(0, slides.length - perView);
+    }
+
+    // Build pagination dots
+    function renderDots() {
+      if (!dotsContainer) return;
+      dotsContainer.innerHTML = '';
+      const totalSteps = getMaxIndex() + 1;
+      for (let i = 0; i < totalSteps; i++) {
+        const dot = document.createElement('button');
+        dot.className = `clan-dot ${i === currentIndex ? 'active' : ''}`;
+        dot.setAttribute('aria-label', `Go to slide group ${i + 1}`);
+        dot.addEventListener('click', () => {
+          goToSlide(i);
+          resetAutoPlay();
+        });
+        dotsContainer.appendChild(dot);
+      }
+    }
+
+    function updateDots() {
+      if (!dotsContainer) return;
+      const dots = dotsContainer.querySelectorAll('.clan-dot');
+      dots.forEach((d, idx) => {
+        d.classList.toggle('active', idx === currentIndex);
+      });
+    }
+
+    function updateSlidePosition() {
+      if (slides.length === 0) return;
+      const slide = slides[0];
+      const slideStyle = window.getComputedStyle(slide);
+      const gap = parseFloat(window.getComputedStyle(track).gap) || 24;
+      const slideWidth = slide.getBoundingClientRect().width;
+      const moveAmount = (slideWidth + gap) * currentIndex;
+      track.style.transform = `translateX(-${moveAmount}px)`;
+      updateDots();
+    }
+
+    function goToSlide(index) {
+      const maxIdx = getMaxIndex();
+      currentIndex = Math.max(0, Math.min(index, maxIdx));
+      updateSlidePosition();
+    }
+
+    function nextSlide() {
+      const maxIdx = getMaxIndex();
+      if (currentIndex >= maxIdx) {
+        currentIndex = 0;
+      } else {
+        currentIndex++;
+      }
+      updateSlidePosition();
+    }
+
+    function prevSlide() {
+      const maxIdx = getMaxIndex();
+      if (currentIndex <= 0) {
+        currentIndex = maxIdx;
+      } else {
+        currentIndex--;
+      }
+      updateSlidePosition();
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        nextSlide();
+        resetAutoPlay();
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        prevSlide();
+        resetAutoPlay();
+      });
+    }
+
+    // Auto-play
+    function startAutoPlay() {
+      stopAutoPlay();
+      autoPlayTimer = setInterval(nextSlide, 4500);
+    }
+
+    function stopAutoPlay() {
+      if (autoPlayTimer) clearInterval(autoPlayTimer);
+    }
+
+    function resetAutoPlay() {
+      stopAutoPlay();
+      startAutoPlay();
+    }
+
+    viewport.addEventListener('mouseenter', stopAutoPlay);
+    viewport.addEventListener('mouseleave', startAutoPlay);
+
+    // Touch & Swipe gestures
+    viewport.addEventListener('touchstart', (e) => {
+      stopAutoPlay();
+      startX = e.touches[0].clientX;
+    }, { passive: true });
+
+    viewport.addEventListener('touchend', (e) => {
+      const endX = e.changedTouches[0].clientX;
+      const diff = startX - endX;
+      if (Math.abs(diff) > 40) {
+        if (diff > 0) {
+          nextSlide();
+        } else {
+          prevSlide();
+        }
+      }
+      startAutoPlay();
+    });
+
+    window.addEventListener('resize', () => {
+      renderDots();
+      goToSlide(Math.min(currentIndex, getMaxIndex()));
+    });
+
+    renderDots();
+    updateSlidePosition();
+    startAutoPlay();
+
+    // --- Custom Lightbox Modal Handler ---
+    const lightboxModal = document.getElementById('clanLightboxModal');
+    const lightboxBackdrop = document.getElementById('clanLightboxBackdrop');
+    const lightboxClose = document.getElementById('clanLightboxClose');
+    const lightboxImg = document.getElementById('clanLightboxImg');
+    const lightboxTitle = document.getElementById('clanLightboxTitle');
+    const lightboxTag = document.getElementById('clanLightboxTag');
+    const lightboxDesc = document.getElementById('clanLightboxDesc');
+
+    function openLightbox(slide) {
+      if (!lightboxModal) return;
+      const imgUrl = slide.dataset.img;
+      const title = slide.dataset.title;
+      const tag = slide.dataset.tag;
+      const desc = slide.dataset.desc;
+
+      if (lightboxImg) lightboxImg.src = imgUrl;
+      if (lightboxTitle) lightboxTitle.textContent = title;
+      if (lightboxTag) lightboxTag.textContent = tag;
+      if (lightboxDesc) lightboxDesc.textContent = desc;
+
+      lightboxModal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      stopAutoPlay();
+    }
+
+    function closeLightbox() {
+      if (!lightboxModal) return;
+      lightboxModal.classList.remove('open');
+      document.body.style.overflow = '';
+      startAutoPlay();
+    }
+
+    slides.forEach((slide) => {
+      slide.addEventListener('click', (e) => {
+        openLightbox(slide);
+      });
+    });
+
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+    if (lightboxBackdrop) lightboxBackdrop.addEventListener('click', closeLightbox);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightboxModal && lightboxModal.classList.contains('open')) {
+        closeLightbox();
+      }
+    });
+  })();
+
   // Expose modal helper
   window.AoifeModals = {
     open: openCustomModal,
     close: closeAllModals
   };
 })();
+

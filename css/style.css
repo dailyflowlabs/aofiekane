@@ -974,66 +974,321 @@ button {
 }
 
 /* ==========================================================================
-   Visuals & Gallery Section
+   Clan Rebellion Consistent Profile Carousel
    ========================================================================== */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-  gap: 2rem;
-}
-
-.gallery-card {
+.clan-carousel-container {
   position: relative;
-  aspect-ratio: 1/1;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  border: 1px solid var(--border-glass);
-  background: var(--bg-surface);
-  cursor: pointer;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  max-width: 1240px;
+  margin: 2.5rem auto 0;
+  padding: 0 1rem;
 }
 
-.gallery-card-img {
+.clan-carousel-viewport {
+  overflow: hidden;
+  border-radius: var(--radius-lg, 16px);
+  padding: 15px 0 25px 0;
+  cursor: grab;
+}
+
+.clan-carousel-viewport:active {
+  cursor: grabbing;
+}
+
+.clan-carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.5s cubic-bezier(0.2, 0.9, 0.3, 1);
+  will-change: transform;
+}
+
+.clan-carousel-slide {
+  flex: 0 0 calc(33.333% - 1rem);
+  min-width: 0;
+  user-select: none;
+}
+
+@media (max-width: 992px) {
+  .clan-carousel-slide {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .clan-carousel-slide {
+    flex: 0 0 85%;
+  }
+}
+
+.clan-slide-card {
+  position: relative;
+  aspect-ratio: 9/16;
+  border-radius: var(--radius-md, 12px);
+  overflow: hidden;
+  border: 1px solid rgba(229, 193, 88, 0.22);
+  background: var(--bg-surface, #0d1210);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7);
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.45s ease;
+}
+
+.clan-slide-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(16, 185, 129, 0.6);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(16, 185, 129, 0.25);
+}
+
+.clan-slide-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.35s;
 }
 
-.gallery-card:hover .gallery-card-img {
-  transform: scale(1.08);
-  filter: brightness(1.08);
+.clan-slide-card:hover .clan-slide-img {
+  transform: scale(1.05);
+  filter: brightness(1.05);
 }
 
-.gallery-card-overlay {
+.clan-slide-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(6, 9, 8, 0.95) 0%, rgba(6, 9, 8, 0.2) 60%, transparent 100%);
+  background: linear-gradient(to top, rgba(4, 7, 6, 0.95) 0%, rgba(4, 7, 6, 0.5) 45%, transparent 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 1.8rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  padding: 1.75rem 1.5rem;
+  pointer-events: none;
 }
 
-.gallery-card:hover .gallery-card-overlay {
-  opacity: 1;
-}
-
-.gallery-card-title {
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
+.clan-slide-badge {
+  font-size: 0.72rem;
   font-weight: 700;
-  color: var(--text-primary);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--emerald-bright, #10b981);
   margin-bottom: 0.35rem;
 }
 
-.gallery-card-tag {
-  font-size: 0.78rem;
-  color: var(--emerald-bright);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+.clan-slide-title {
+  font-family: var(--font-heading, sans-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.3rem;
+  line-height: 1.25;
+}
+
+.clan-slide-desc {
+  font-size: 0.82rem;
+  color: #a1a1aa;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.clan-slide-zoom-btn {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(8, 12, 10, 0.7);
+  border: 1px solid rgba(229, 193, 88, 0.35);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  pointer-events: auto;
+  opacity: 0.75;
+  transition: all 0.3s ease;
+}
+
+.clan-slide-card:hover .clan-slide-zoom-btn {
+  opacity: 1;
+  background: var(--emerald-bright, #10b981);
+  border-color: var(--emerald-bright, #10b981);
+  color: #000;
+  transform: scale(1.08);
+}
+
+/* Nav Chevrons */
+.clan-carousel-nav {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(8, 14, 11, 0.85);
+  border: 1px solid rgba(229, 193, 88, 0.4);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 15;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clan-carousel-prev {
+  left: -15px;
+}
+
+.clan-carousel-next {
+  right: -15px;
+}
+
+@media (max-width: 1024px) {
+  .clan-carousel-prev { left: 10px; }
+  .clan-carousel-next { right: 10px; }
+}
+
+.clan-carousel-nav:hover {
+  background: var(--emerald-bright, #10b981);
+  border-color: var(--emerald-bright, #10b981);
+  color: #040806;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.6);
+}
+
+/* Pagination Dots */
+.clan-carousel-dots {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+
+.clan-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  padding: 0;
+}
+
+.clan-dot.active {
+  width: 28px;
+  border-radius: 6px;
+  background: var(--emerald-bright, #10b981);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.7);
+}
+
+/* Custom Clan Lightbox Modal */
+.clan-lightbox-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.clan-lightbox-modal.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.clan-lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 5, 4, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.clan-lightbox-content {
+  position: relative;
+  max-width: 540px;
+  width: 100%;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  background: #080c0a;
+  border-radius: 16px;
+  border: 1px solid rgba(229, 193, 88, 0.3);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(16, 185, 129, 0.2);
+  overflow: hidden;
+  transform: scale(0.95);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 2;
+}
+
+.clan-lightbox-modal.open .clan-lightbox-content {
+  transform: scale(1);
+}
+
+.clan-lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.25s ease;
+}
+
+.clan-lightbox-close:hover {
+  background: #ef4444;
+  border-color: #ef4444;
+  transform: rotate(90deg);
+}
+
+.clan-lightbox-media {
+  width: 100%;
+  height: calc(92vh - 120px);
+  background: #040605;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.clan-lightbox-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.clan-lightbox-info {
+  padding: 1.25rem 1.5rem;
+  background: #080d0b;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.clan-lightbox-title {
+  font-family: var(--font-heading, sans-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0.2rem 0;
+}
+
+.clan-lightbox-desc {
+  font-size: 0.88rem;
+  color: #a1a1aa;
+  margin: 0;
 }
 
 /* ==========================================================================
