@@ -4,3 +4,6 @@ music/Stems/
 music/*3000x3000*
 images/*3000x3000*
 node_modules/
+.env
+.env.*
+.env.local

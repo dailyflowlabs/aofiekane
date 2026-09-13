@@ -219,36 +219,53 @@
   // --- 5. MERCH MODAL ENGINE (COMPLIANT WITH CUSTOM MODAL RULES) ---
   const MERCH_DATA = {
     battle_tee: {
+      productId: "6aa5bcd6c2763c2ff201c2ae",
+      defaultVariantId: 18102, // L
       title: "Vintage Washed Battle Tee",
       price: 34,
-      sizes: ["S", "M", "L", "XL", "2XL"],
-      desc: "Heavyweight 100% ring-spun cotton mineral-wash band tee featuring the album cover crest with full lyric tracklist on reverse.",
+      sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+      variants: {
+        "S": 18100,
+        "M": 18101,
+        "L": 18102,
+        "XL": 18103,
+        "2XL": 18104,
+        "3XL": 18105
+      },
+      desc: "Heavyweight 100% combed ringspun cotton battle tee in pitch black with master Celtic crest and runes.",
       tag: "Unisex Heavyweight Cotton"
     },
-    crop_top: {
-      title: "Clan Kane Warrior Crop Top",
-      price: 28,
-      sizes: ["XS", "S", "M", "L", "XL"],
-      desc: "Signature strappy high-neck battle crop top in pitch black with gold-foil knotwork crest. Inspired by Aoife's Connemara stage look.",
-      tag: "Performance Stretch"
-    },
     hoodie: {
+      productId: "6aa5bd26b6bdffef520bd683",
+      defaultVariantId: 32920, // L
       title: "Megalith Ceremony Pullover Hoodie",
       price: 58,
-      sizes: ["S", "M", "L", "XL", "2XL"],
-      desc: "10oz heavyweight fleece pullover in Charcoal Heather with Celtic knotwork along both sleeves and double-layer hood.",
+      sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+      variants: {
+        "S": 32918,
+        "M": 32919,
+        "L": 32920,
+        "XL": 32921,
+        "2XL": 32922,
+        "3XL": 32923
+      },
+      desc: "10oz heavyweight fleece pullover in pitch black with double-layer hood and front kangaroo pocket.",
       tag: "10oz Heavyweight Fleece"
     },
     poster: {
-      title: "Ancient Megaliths Dawn Vigil Poster (18\" x 24\")",
+      productId: "6aa5bd2ac2763c2ff201c2ea",
+      defaultVariantId: 43172,
+      title: "Ancient Megaliths Dawn Vigil Poster (24\" x 18\")",
       price: 24,
       sizes: null,
-      desc: "Museum-grade heavy matte archival print of Aoife Kane standing before ancient stone monoliths as the Connemara mist rises.",
+      desc: "Museum-grade heavy matte 175gsm archival art print of Aoife Kane standing before ancient stone monoliths.",
       tag: "Museum-Grade Matte Giclée"
     },
     mug: {
+      productId: "6aa5bd4dd54107fc9508567a",
+      defaultVariantId: 33719,
       title: "Hold The Line Ceramic Mug (11oz)",
-      price: 18,
+      price: 16,
       sizes: null,
       desc: "High gloss ceramic mug with high definition Celtic battle crest. Dishwasher and microwave safe.",
       tag: "Ceramic Relic"
@@ -260,8 +277,13 @@
 
   window.openMerchModal = function (itemId) {
     const item = MERCH_DATA[itemId] || MERCH_DATA.battle_tee;
-    currentSelectedSize = item.sizes ? item.sizes[1] || "M" : null;
-    currentSelectedQty = 1;
+    if (item.sizes) {
+      if (!currentSelectedSize || !item.sizes.includes(currentSelectedSize)) {
+        currentSelectedSize = item.sizes.includes("L") ? "L" : item.sizes[0];
+      }
+    } else {
+      currentSelectedSize = null;
+    }
 
     function renderModalHtml() {
       const subtotal = (item.price * currentSelectedQty).toFixed(2);
@@ -301,17 +323,14 @@
             </div>
           </div>
 
-          <form onsubmit="submitMerchOrder(event, '${itemId}')" style="margin-top:1.5rem;">
-            <div style="margin-bottom:1rem;">
-              <input type="email" id="merchBuyerEmail" required placeholder="Enter your email address for order confirmation..." style="width:100%; padding:0.95rem 1.25rem; border-radius:var(--radius-pill); border:1px solid var(--border-gold); background:rgba(0,0,0,0.7); color:#fff; font-size:0.95rem; box-sizing:border-box; outline:none; font-family:inherit;">
-            </div>
-            <button type="submit" class="btn btn-primary" style="width:100%; padding:1.05rem; font-size:1rem; font-weight:700;">
-              Proceed to Secure Checkout ($${subtotal})
+          <div style="margin-top:1.5rem;">
+            <button type="button" id="merchSubmitBtn" class="btn btn-primary" onclick="submitMerchOrder(event, '${itemId}')" style="width:100%; padding:1.05rem; font-size:1rem; font-weight:700;">
+              Proceed to Secure Stripe Checkout ($${subtotal})
             </button>
-          </form>
+          </div>
 
           <div style="margin-top:1rem; text-align:center; font-size:0.78rem; color:var(--text-muted);">
-            🔒 Zero Risk Guarantee • Printed & Shipped on Demand • Worldwide Tracking
+            🔒 Official Vault Guarantee • Printed & Shipped via Printify • Tracking Included
           </div>
         </div>
       `;
@@ -330,27 +349,53 @@
     window.openMerchModal(itemId);
   };
 
-  window.submitMerchOrder = function (event, itemId) {
-    event.preventDefault();
+  window.submitMerchOrder = async function (event, itemId) {
+    if (event) event.preventDefault();
     const item = MERCH_DATA[itemId] || MERCH_DATA.battle_tee;
-    const email = document.getElementById('merchBuyerEmail')?.value || 'Fan';
-    const subtotal = (item.price * currentSelectedQty).toFixed(2);
-    const sizeStr = currentSelectedSize ? `Size: <strong>${currentSelectedSize}</strong> • ` : '';
+    const submitBtn = document.getElementById('merchSubmitBtn');
 
-    openCustomModal(
-      'Order Allocation Confirmed',
-      `<div style="text-align:center; padding:1rem 0;">
-        <div style="width:56px; height:56px; margin:0 auto 1.2rem; border-radius:50%; background:rgba(16,185,129,0.2); border:2px solid var(--emerald-bright); display:flex; align-items:center; justify-content:center; color:var(--emerald-bright); font-size:1.6rem;">✓</div>
-        <h4 style="font-size:1.35rem; color:#fff; margin-bottom:0.6rem;">Clan Order Staged</h4>
-        <p style="color:var(--text-secondary); font-size:0.95rem; margin-bottom:1.4rem;">
-          Thank you, <strong>${email}</strong>. Your allocation for <strong>${item.title}</strong> (${sizeStr}Qty: <strong>${currentSelectedQty}</strong>) at <strong>$${subtotal} USD</strong> is recorded.
-        </p>
-        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1.8rem;">
-          Our print-on-demand fulfillment partner is synchronizing inventory. You will receive your direct dispatch invoice and tracking link via email.
-        </p>
-        <button class="btn btn-primary" onclick="AoifeModals.close()">Return to Sound Vault</button>
-      </div>`
-    );
+    let variantId = item.defaultVariantId;
+    if (item.variants && currentSelectedSize) {
+      variantId = item.variants[currentSelectedSize] || item.defaultVariantId;
+    }
+
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.style.opacity = '0.75';
+      submitBtn.innerHTML = `Connecting to Secure Checkout...`;
+    }
+
+    try {
+      const response = await fetch('/api/merch/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          productId: item.productId,
+          variantId: variantId,
+          quantity: currentSelectedQty
+        })
+      });
+
+      const data = await response.json();
+      if (!response.ok || !data.url) {
+        throw new Error(data.error || 'Failed to initialize checkout session.');
+      }
+
+      window.location.href = data.url;
+    } catch (err) {
+      console.error('Checkout error:', err);
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.style.opacity = '1';
+        submitBtn.textContent = 'Retry Checkout';
+      }
+      openCustomModal('Vault Notice', `
+        <div style="text-align:center; padding:1rem 0;">
+          <p style="color:#f87171; font-size:0.95rem; margin-bottom:1.5rem; line-height:1.5;">${err.message || 'Unable to establish secure checkout connection. Please try again.'}</p>
+          <button class="btn btn-primary" onclick="AoifeModals.close()">Close</button>
+        </div>
+      `);
+    }
   };
 
   // Expose modal helper
