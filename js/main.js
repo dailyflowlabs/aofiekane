@@ -324,8 +324,8 @@
           </div>
 
           <div style="margin-top:1.5rem;">
-            <button type="button" id="merchSubmitBtn" class="btn btn-primary" onclick="submitMerchOrder(event, '${itemId}')" style="width:100%; padding:1.05rem; font-size:1rem; font-weight:700;">
-              Proceed to Secure Stripe Checkout ($${subtotal})
+            <button type="button" id="merchSubmitBtn" class="btn btn-primary" onclick="submitMerchOrder(event, '${itemId}')" style="width:100%; padding:1rem 1.25rem; font-size:0.9rem; font-weight:700; letter-spacing:0.08em; white-space:normal; line-height:1.3; text-align:center;">
+              Proceed to Checkout ($${subtotal})
             </button>
           </div>
 
@@ -362,7 +362,7 @@
     if (submitBtn) {
       submitBtn.disabled = true;
       submitBtn.style.opacity = '0.75';
-      submitBtn.innerHTML = `Connecting to Secure Checkout...`;
+      submitBtn.innerHTML = `Connecting to Checkout...`;
     }
 
     try {
