@@ -987,6 +987,11 @@ We are still here!`
       el.classList.toggle('active', i === idx);
     });
 
+    const activeItem = playlistContainer.children[idx];
+    if (activeItem) {
+      activeItem.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }
+
     if (autoPlay) {
       playAudio();
     }
@@ -1200,8 +1205,41 @@ We are still here!`
     tracks
   };
 
+  // Synchronize tracklist bottom with visualizer / equalizer bottom
+  function syncPlayerHeights() {
+    const visualizerWrap = document.querySelector('.visualizer-canvas-wrap');
+    if (!visualizerWrap || !playlistContainer) return;
+
+    if (window.innerWidth > 1024) {
+      // Calculate exact distance from playlist container top to visualizer bottom
+      const eqBottom = visualizerWrap.getBoundingClientRect().bottom;
+      const plTop = playlistContainer.getBoundingClientRect().top;
+      const targetHeight = Math.floor(eqBottom - plTop);
+      if (targetHeight > 100) {
+        playlistContainer.style.height = targetHeight + 'px';
+        playlistContainer.style.maxHeight = targetHeight + 'px';
+      }
+    } else {
+      playlistContainer.style.height = '';
+      playlistContainer.style.maxHeight = '320px';
+    }
+  }
+
+  window.addEventListener('resize', syncPlayerHeights);
+  window.addEventListener('load', syncPlayerHeights);
+
+  // ResizeObserver on art column and window for precision
+  const artCol = document.querySelector('.player-art-col');
+  if (artCol && window.ResizeObserver) {
+    const ro = new ResizeObserver(() => {
+      syncPlayerHeights();
+    });
+    ro.observe(artCol);
+  }
+
   // Initial load
   initPlaylist();
   loadTrack(0, false);
+  requestAnimationFrame(syncPlayerHeights);
 
 })();
