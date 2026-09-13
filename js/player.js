@@ -104,7 +104,7 @@ We are still standing, we are still here`
       tag: "Album Track",
       duration: "3:30",
       src: "music/BONES IN THE PEAT.mp3",
-      artwork: "images/aoife-kane-02.jpg",
+      artwork: "music/02-bones-in-the-peat.jpg",
       lyrics: `[Intro]
 Mmm-mmm...
 Dig deep.
@@ -278,7 +278,7 @@ We are still standing, we are still here`
       tag: "Single",
       duration: "3:40",
       src: "music/BLOOD ON THE HEATHER.mp3",
-      artwork: "music/04-red-thread-home.jpg",
+      artwork: "music/04-blood-on-the-heather.jpg",
       lyrics: `[Intro]
 Crimson and gold on the morning hill
 We are the storm that you cannot still
@@ -368,7 +368,7 @@ We are the storm that you cannot still`
       tag: "Battle Anthem",
       duration: "3:35",
       src: "music/STAND TO THE STONE.mp3",
-      artwork: "music/05-the-last-watch.jpg",
+      artwork: "music/05-stand-to-the-stone.jpg",
       lyrics: `[Intro]
 Stand to the stone, let the valley wake!
 Stand for the ground that they cannot take!
@@ -458,7 +458,7 @@ This is the ground that you cannot take`
       tag: "Viral Track",
       duration: "3:42",
       src: "music/Silver & Ash.mp3",
-      artwork: "music/06-blackwater.jpg",
+      artwork: "music/06-silver-and-ash.jpg",
       lyrics: `[Intro]
 Silver and ash in the winter air
 We are the flame that they couldn’t scare
@@ -548,7 +548,7 @@ We are still standing, we are still there`
       tag: "Folk Rock",
       duration: "3:33",
       src: "music/BRAMBLES & STEEL.mp3",
-      artwork: "music/07-ash-and-honey.jpg",
+      artwork: "music/07-brambles-and-steel.jpg",
       lyrics: `[Intro]
 Brambles and steel on the border line
 You took your road and we’re keeping mine
@@ -638,7 +638,7 @@ The ground is yours and the ground is mine`
       tag: "Epic Surge",
       duration: "3:45",
       src: "music/THE RIVER KNOWS.mp3",
-      artwork: "music/08-crow-road.jpg",
+      artwork: "music/08-the-river-knows.jpg",
       lyrics: `[Intro]
 The river knows where the water goes
 From the mountain peak to the valley rose
@@ -728,7 +728,7 @@ We are still standing, the river flows`
       tag: "Battle Cry",
       duration: "3:30",
       src: "music/CALL THE CLANS.mp3",
-      artwork: "music/09-saints-in-the-rain.jpg",
+      artwork: "music/09-call-the-clans.jpg",
       lyrics: `[Intro]
 Call the clans from the hill and glen
 We’re lighting the beacon fires again!
@@ -818,7 +818,7 @@ We are still standing, we win again!`
       tag: "Album Closer",
       duration: "3:40",
       src: "music/WE ARE STILL HERE.mp3",
-      artwork: "music/10-keep-the-flame.jpg",
+      artwork: "music/10-we-are-still-here.jpg",
       lyrics: `[Intro]
 Raise the green, let the old hills hear
 Through the hundred years, we are standing here
