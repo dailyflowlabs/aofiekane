@@ -219,7 +219,7 @@
   // --- 5. MERCH MODAL ENGINE (COMPLIANT WITH CUSTOM MODAL RULES) ---
   const MERCH_DATA = {
     battle_tee: {
-      productId: "6aa5bcd6c2763c2ff201c2ae",
+      productId: "6aa7a4af00e348554207db01",
       defaultVariantId: 18102, // L
       title: "Vintage Washed Battle Tee",
       price: 34,
@@ -236,7 +236,7 @@
       tag: "Unisex Heavyweight Cotton"
     },
     hoodie: {
-      productId: "6aa5bd26b6bdffef520bd683",
+      productId: "6aa7a4aa533695c7070b7f21",
       defaultVariantId: 32920, // L
       title: "Megalith Ceremony Pullover Hoodie",
       price: 58,
@@ -253,7 +253,7 @@
       tag: "10oz Heavyweight Fleece"
     },
     poster: {
-      productId: "6aa5bd2ac2763c2ff201c2ea",
+      productId: "6aa7a4a5533695c7070b7f16",
       defaultVariantId: 43172,
       title: "Ancient Megaliths Dawn Vigil Poster (24\" x 18\")",
       price: 24,
@@ -262,7 +262,7 @@
       tag: "Museum-Grade Matte Giclée"
     },
     mug: {
-      productId: "6aa5bd4dd54107fc9508567a",
+      productId: "6aa7a4a1533695c7070b7f13",
       defaultVariantId: 33719,
       title: "Hold The Line Ceramic Mug (11oz)",
       price: 16,

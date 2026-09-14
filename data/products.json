@@ -1,6 +1,6 @@
 [
   {
-    "id": "6aa5bd4dd54107fc9508567a",
+    "id": "6aa7a4a1533695c7070b7f13",
     "title": "Aoife Kane - Hold The Line Ceramic Mug (11oz)",
     "description": "Official Celtic Battle-Pop high gloss ceramic mug with high definition shield print.",
     "tags": [
@@ -30,7 +30,7 @@
     "variants": [
       {
         "id": 33719,
-        "sku": "19711441627321597725",
+        "sku": "14975613249808370336",
         "cost": 644,
         "price": 1600,
         "title": "11oz",
@@ -47,8 +47,8 @@
     ],
     "images": [
       {
-        "mockup_id": "6aa5bd4dd54107fc9508567a_33719_6400_front",
-        "src": "https://images-api.printify.com/mockup/6aa5bd4dd54107fc9508567a/33719/6400/aoife-kane-hold-the-line-ceramic-mug-11oz.jpg?camera_label=front",
+        "mockup_id": "6aa7a4a1533695c7070b7f13_33719_6400_front",
+        "src": "https://images-api.printify.com/mockup/6aa7a4a1533695c7070b7f13/33719/6400/aoife-kane-hold-the-line-ceramic-mug-11oz.jpg?camera_label=front",
         "variant_ids": [
           33719
         ],
@@ -58,8 +58,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd4dd54107fc9508567a_33719_6402_left",
-        "src": "https://images-api.printify.com/mockup/6aa5bd4dd54107fc9508567a/33719/6402/aoife-kane-hold-the-line-ceramic-mug-11oz.jpg?camera_label=left",
+        "mockup_id": "6aa7a4a1533695c7070b7f13_33719_6402_left",
+        "src": "https://images-api.printify.com/mockup/6aa7a4a1533695c7070b7f13/33719/6402/aoife-kane-hold-the-line-ceramic-mug-11oz.jpg?camera_label=left",
         "variant_ids": [
           33719
         ],
@@ -69,8 +69,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd4dd54107fc9508567a_33719_10395_right",
-        "src": "https://images-api.printify.com/mockup/6aa5bd4dd54107fc9508567a/33719/10395/aoife-kane-hold-the-line-ceramic-mug-11oz.jpg?camera_label=right",
+        "mockup_id": "6aa7a4a1533695c7070b7f13_33719_10395_right",
+        "src": "https://images-api.printify.com/mockup/6aa7a4a1533695c7070b7f13/33719/10395/aoife-kane-hold-the-line-ceramic-mug-11oz.jpg?camera_label=right",
         "variant_ids": [
           33719
         ],
@@ -80,8 +80,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd4dd54107fc9508567a_33719_10393_context-1",
-        "src": "https://images-api.printify.com/mockup/6aa5bd4dd54107fc9508567a/33719/10393/aoife-kane-hold-the-line-ceramic-mug-11oz.jpg?camera_label=context-1",
+        "mockup_id": "6aa7a4a1533695c7070b7f13_33719_10393_context-1",
+        "src": "https://images-api.printify.com/mockup/6aa7a4a1533695c7070b7f13/33719/10393/aoife-kane-hold-the-line-ceramic-mug-11oz.jpg?camera_label=context-1",
         "variant_ids": [
           33719
         ],
@@ -91,8 +91,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd4dd54107fc9508567a_33719_10394_context-2",
-        "src": "https://images-api.printify.com/mockup/6aa5bd4dd54107fc9508567a/33719/10394/aoife-kane-hold-the-line-ceramic-mug-11oz.jpg?camera_label=context-2",
+        "mockup_id": "6aa7a4a1533695c7070b7f13_33719_10394_context-2",
+        "src": "https://images-api.printify.com/mockup/6aa7a4a1533695c7070b7f13/33719/10394/aoife-kane-hold-the-line-ceramic-mug-11oz.jpg?camera_label=context-2",
         "variant_ids": [
           33719
         ],
@@ -102,8 +102,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd4dd54107fc9508567a_33719_6568_context-3",
-        "src": "https://images-api.printify.com/mockup/6aa5bd4dd54107fc9508567a/33719/6568/aoife-kane-hold-the-line-ceramic-mug-11oz.jpg?camera_label=context-3",
+        "mockup_id": "6aa7a4a1533695c7070b7f13_33719_6568_context-3",
+        "src": "https://images-api.printify.com/mockup/6aa7a4a1533695c7070b7f13/33719/6568/aoife-kane-hold-the-line-ceramic-mug-11oz.jpg?camera_label=context-3",
         "variant_ids": [
           33719
         ],
@@ -113,13 +113,13 @@
         "order": null
       }
     ],
-    "created_at": "2026-09-12 20:59:57+00:00",
-    "updated_at": "2026-09-12 20:59:57+00:00",
+    "created_at": "2026-09-14 07:39:13+00:00",
+    "updated_at": "2026-09-14 07:39:14+00:00",
     "visible": true,
-    "is_locked": false,
+    "is_locked": true,
     "blueprint_id": 68,
     "user_id": 28198904,
-    "shop_id": 28919161,
+    "shop_id": 28933843,
     "print_provider_id": 1,
     "print_areas": [
       {
@@ -144,7 +144,7 @@
                 "angle": 0,
                 "src": "https://pfy-prod-image-storage.s3.us-east-2.amazonaws.com/28198904/21e53c78-527f-41f8-b8a3-6db59baf38a1",
                 "layerType": "image",
-                "imageId": "6aa5bcc78ce8faba5ed5c989_b1695ddf-9652-489b-d0e9-d18cf966ef16"
+                "imageId": "6aa5bcc78ce8faba5ed5c989_c94eccd1-658b-fb0f-b10f-2522b5aa1eee"
               }
             ],
             "decoration_method": "dye-sublimation"
@@ -178,7 +178,7 @@
     ]
   },
   {
-    "id": "6aa5bd2ac2763c2ff201c2ea",
+    "id": "6aa7a4a5533695c7070b7f16",
     "title": "Aoife Kane - Megaliths Dawn Vigil Archival Poster",
     "description": "Museum-grade archival 175gsm fine art gicl\u00e9e print. Official Monolith Vigil artwork.",
     "tags": [
@@ -400,7 +400,7 @@
     "variants": [
       {
         "id": 43163,
-        "sku": "30801589422684145760",
+        "sku": "33403831609161413644",
         "cost": 660,
         "price": 660,
         "title": "14\u2033 x 11\u2033 / Matte",
@@ -417,7 +417,7 @@
       },
       {
         "id": 43166,
-        "sku": "32716877885623716580",
+        "sku": "90906378801947217649",
         "cost": 1034,
         "price": 1034,
         "title": "18\u2033 x 12\u2033 / Matte",
@@ -434,7 +434,7 @@
       },
       {
         "id": 43169,
-        "sku": "73341815041952447706",
+        "sku": "55451638219599617961",
         "cost": 1200,
         "price": 1200,
         "title": "20\u2033 x 16\u2033 / Matte",
@@ -451,7 +451,7 @@
       },
       {
         "id": 43172,
-        "sku": "14241601323007590283",
+        "sku": "21442313242313683329",
         "cost": 1184,
         "price": 2400,
         "title": "24\u2033 x 18\u2033 / Matte",
@@ -468,7 +468,7 @@
       },
       {
         "id": 43175,
-        "sku": "11239156217690419632",
+        "sku": "10279143958671072560",
         "cost": 1380,
         "price": 1380,
         "title": "30\u2033 x 20\u2033 / Matte",
@@ -485,7 +485,7 @@
       },
       {
         "id": 43178,
-        "sku": "57472208061939661806",
+        "sku": "37449317637943811341",
         "cost": 1760,
         "price": 1760,
         "title": "36\u2033 x 24\u2033 / Matte",
@@ -502,7 +502,7 @@
       },
       {
         "id": 62100,
-        "sku": "10821224649269088423",
+        "sku": "20268508401918492252",
         "cost": 552,
         "price": 552,
         "title": "11\" x 9\" / Matte",
@@ -519,7 +519,7 @@
       },
       {
         "id": 101237,
-        "sku": "19716443303813662362",
+        "sku": "70278571627032134085",
         "cost": 786,
         "price": 786,
         "title": "10\u2033 x 10\u2033 / Matte",
@@ -536,7 +536,7 @@
       },
       {
         "id": 101238,
-        "sku": "98831102505499658389",
+        "sku": "10175882348796614654",
         "cost": 895,
         "price": 895,
         "title": "13\" x 10\" / Matte",
@@ -553,7 +553,7 @@
       },
       {
         "id": 101239,
-        "sku": "64864085514304391069",
+        "sku": "95922124381169266082",
         "cost": 895,
         "price": 895,
         "title": "16\" x 11\" / Matte",
@@ -570,7 +570,7 @@
       },
       {
         "id": 101240,
-        "sku": "60923777857826198141",
+        "sku": "17770084059252199832",
         "cost": 1042,
         "price": 1042,
         "title": "17\" x 10\" / Matte",
@@ -587,7 +587,7 @@
       },
       {
         "id": 101241,
-        "sku": "29992863506925797051",
+        "sku": "23631666637082112667",
         "cost": 895,
         "price": 895,
         "title": "17\" x 11\" / Matte",
@@ -604,7 +604,7 @@
       },
       {
         "id": 101242,
-        "sku": "26955308433622715827",
+        "sku": "13408500424758935140",
         "cost": 1042,
         "price": 1042,
         "title": "20\" x 10\" / Matte",
@@ -621,7 +621,7 @@
       },
       {
         "id": 101243,
-        "sku": "11754301309438903227",
+        "sku": "17967947691217468689",
         "cost": 1187,
         "price": 1187,
         "title": "22\" x 11\" / Matte",
@@ -638,7 +638,7 @@
       },
       {
         "id": 101245,
-        "sku": "32601915253438225724",
+        "sku": "27892280208385888337",
         "cost": 895,
         "price": 895,
         "title": "12\" x 12\" / Matte",
@@ -655,7 +655,7 @@
       },
       {
         "id": 101256,
-        "sku": "39312740508411813532",
+        "sku": "37627381224444521226",
         "cost": 1111,
         "price": 1111,
         "title": "16\" x 12\" / Matte",
@@ -672,7 +672,7 @@
       },
       {
         "id": 101257,
-        "sku": "17056614003029663712",
+        "sku": "67348176642425809962",
         "cost": 1187,
         "price": 1187,
         "title": "16\" x 16\" / Matte",
@@ -689,7 +689,7 @@
       },
       {
         "id": 101258,
-        "sku": "17243691588754000503",
+        "sku": "21896966278255201338",
         "cost": 1042,
         "price": 1042,
         "title": "18\" x 14\" / Matte",
@@ -706,7 +706,7 @@
       },
       {
         "id": 101259,
-        "sku": "25348796635511011601",
+        "sku": "23976059946986409895",
         "cost": 1042,
         "price": 1042,
         "title": "19\" x 13\" / Matte",
@@ -723,7 +723,7 @@
       },
       {
         "id": 101260,
-        "sku": "16671458448082621047",
+        "sku": "51380903668342078639",
         "cost": 1187,
         "price": 1187,
         "title": "20\" x 17\" / Matte",
@@ -740,7 +740,7 @@
       },
       {
         "id": 101261,
-        "sku": "15668648431036485522",
+        "sku": "25954681422117486969",
         "cost": 1314,
         "price": 1314,
         "title": "20\" x 20\" / Matte",
@@ -757,7 +757,7 @@
       },
       {
         "id": 101262,
-        "sku": "33263369207538635153",
+        "sku": "26903512199400464798",
         "cost": 1261,
         "price": 1261,
         "title": "23\" x 14\" / Matte",
@@ -774,7 +774,7 @@
       },
       {
         "id": 101263,
-        "sku": "16782762316958771347",
+        "sku": "61995301007630680032",
         "cost": 1314,
         "price": 1314,
         "title": "24\" x 16\" / Matte",
@@ -791,7 +791,7 @@
       },
       {
         "id": 101264,
-        "sku": "10554116446476999765",
+        "sku": "94208856300480083132",
         "cost": 2032,
         "price": 2032,
         "title": "24\" x 20\" / Matte",
@@ -808,7 +808,7 @@
       },
       {
         "id": 101265,
-        "sku": "53387453282071742503",
+        "sku": "31874698026167635804",
         "cost": 1396,
         "price": 1396,
         "title": "28\" x 20\" / Matte",
@@ -825,7 +825,7 @@
       },
       {
         "id": 101266,
-        "sku": "26514607316270268148",
+        "sku": "18372616495215752123",
         "cost": 1554,
         "price": 1554,
         "title": "28\" x 22\" / Matte",
@@ -842,7 +842,7 @@
       },
       {
         "id": 101267,
-        "sku": "13347114285727125832",
+        "sku": "25991471374345416017",
         "cost": 1383,
         "price": 1383,
         "title": "30\" x 15\" / Matte",
@@ -859,7 +859,7 @@
       },
       {
         "id": 101268,
-        "sku": "21777301962129014862",
+        "sku": "66314960585052116447",
         "cost": 1383,
         "price": 1383,
         "title": "30\" x 22\" / Matte",
@@ -876,7 +876,7 @@
       },
       {
         "id": 101269,
-        "sku": "19762064292001512891",
+        "sku": "13996163284808422989",
         "cost": 2483,
         "price": 2483,
         "title": "34\" x 22\" / Matte",
@@ -893,7 +893,7 @@
       },
       {
         "id": 101270,
-        "sku": "23329320998499015783",
+        "sku": "30498721826770636971",
         "cost": 2262,
         "price": 2262,
         "title": "40\" x 20\" / Matte",
@@ -910,7 +910,7 @@
       },
       {
         "id": 101271,
-        "sku": "24308915691711140739",
+        "sku": "68475128135659987926",
         "cost": 3651,
         "price": 3651,
         "title": "40\" x 27\" / Matte",
@@ -927,7 +927,7 @@
       },
       {
         "id": 101272,
-        "sku": "24582797996434615766",
+        "sku": "29942651844521125374",
         "cost": 3771,
         "price": 3771,
         "title": "40\" x 30\" / Matte",
@@ -944,7 +944,7 @@
       },
       {
         "id": 101273,
-        "sku": "14776487989788281117",
+        "sku": "32463278212125136219",
         "cost": 3134,
         "price": 3134,
         "title": "48\" x 24\" / Matte",
@@ -961,7 +961,7 @@
       },
       {
         "id": 101274,
-        "sku": "40044247372065726038",
+        "sku": "18750173678391155088",
         "cost": 3180,
         "price": 3180,
         "title": "48\" x 36\" / Matte",
@@ -978,7 +978,7 @@
       },
       {
         "id": 101275,
-        "sku": "11766668783078941606",
+        "sku": "75217516282865785259",
         "cost": 3327,
         "price": 3327,
         "title": "54\" x 36\" / Matte",
@@ -995,7 +995,7 @@
       },
       {
         "id": 101276,
-        "sku": "13330806918618663216",
+        "sku": "16665106223263441682",
         "cost": 1187,
         "price": 1187,
         "title": "18\" x 18\" / Matte",
@@ -1012,7 +1012,7 @@
       },
       {
         "id": 101277,
-        "sku": "18870185046217083363",
+        "sku": "16656893670088591949",
         "cost": 1481,
         "price": 1481,
         "title": "23\" x 23\" / Matte",
@@ -1029,7 +1029,7 @@
       },
       {
         "id": 101278,
-        "sku": "17723948093200708714",
+        "sku": "59180145662732299368",
         "cost": 1481,
         "price": 1481,
         "title": "24\" x 24\" / Matte",
@@ -1046,7 +1046,7 @@
       },
       {
         "id": 112756,
-        "sku": "17015935259805923131",
+        "sku": "16829473270962935444",
         "cost": 1396,
         "price": 1396,
         "title": "14\" x 14\" / Matte",
@@ -1063,7 +1063,7 @@
       },
       {
         "id": 112757,
-        "sku": "11162076552697405385",
+        "sku": "13925119145116395324",
         "cost": 3060,
         "price": 3060,
         "title": "28\" x 28\" / Matte",
@@ -1080,7 +1080,7 @@
       },
       {
         "id": 114558,
-        "sku": "68471359203904667253",
+        "sku": "12229230673899253427",
         "cost": 3580,
         "price": 3580,
         "title": "40\" x 28\" / Matte",
@@ -1097,7 +1097,7 @@
       },
       {
         "id": 114559,
-        "sku": "11286756248267085309",
+        "sku": "31280489323275207352",
         "cost": 1557,
         "price": 1557,
         "title": "24\" x 10\" / Matte",
@@ -1114,7 +1114,7 @@
       },
       {
         "id": 114560,
-        "sku": "33558555150525239335",
+        "sku": "26794720545392818680",
         "cost": 1259,
         "price": 1259,
         "title": "20\" x 8\" / Matte",
@@ -1131,7 +1131,7 @@
       },
       {
         "id": 114561,
-        "sku": "16855981919491848055",
+        "sku": "31328530376766115713",
         "cost": 974,
         "price": 974,
         "title": "12\" x 8\" / Matte",
@@ -1148,7 +1148,7 @@
       },
       {
         "id": 114562,
-        "sku": "12392349037116871617",
+        "sku": "41797312900662127017",
         "cost": 2525,
         "price": 2525,
         "title": "32\" x 24\" / Matte",
@@ -1165,7 +1165,7 @@
       },
       {
         "id": 114563,
-        "sku": "19989584901137446007",
+        "sku": "86328770041134694440",
         "cost": 919,
         "price": 919,
         "title": "10\" x 8\" / Matte",
@@ -1183,8 +1183,8 @@
     ],
     "images": [
       {
-        "mockup_id": "6aa5bd2ac2763c2ff201c2ea_43172_94818_front",
-        "src": "https://images-api.printify.com/mockup/6aa5bd2ac2763c2ff201c2ea/43172/94818/aoife-kane-megaliths-dawn-vigil-archival-poster.jpg?camera_label=front",
+        "mockup_id": "6aa7a4a5533695c7070b7f16_43172_94818_front",
+        "src": "https://images-api.printify.com/mockup/6aa7a4a5533695c7070b7f16/43172/94818/aoife-kane-megaliths-dawn-vigil-archival-poster.jpg?camera_label=front",
         "variant_ids": [
           43172
         ],
@@ -1194,8 +1194,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd2ac2763c2ff201c2ea_43172_94772_front-2",
-        "src": "https://images-api.printify.com/mockup/6aa5bd2ac2763c2ff201c2ea/43172/94772/aoife-kane-megaliths-dawn-vigil-archival-poster.jpg?camera_label=front-2",
+        "mockup_id": "6aa7a4a5533695c7070b7f16_43172_94772_front-2",
+        "src": "https://images-api.printify.com/mockup/6aa7a4a5533695c7070b7f16/43172/94772/aoife-kane-megaliths-dawn-vigil-archival-poster.jpg?camera_label=front-2",
         "variant_ids": [
           43172
         ],
@@ -1205,8 +1205,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd2ac2763c2ff201c2ea_43172_99642_close-up",
-        "src": "https://images-api.printify.com/mockup/6aa5bd2ac2763c2ff201c2ea/43172/99642/aoife-kane-megaliths-dawn-vigil-archival-poster.jpg?camera_label=close-up",
+        "mockup_id": "6aa7a4a5533695c7070b7f16_43172_99642_close-up",
+        "src": "https://images-api.printify.com/mockup/6aa7a4a5533695c7070b7f16/43172/99642/aoife-kane-megaliths-dawn-vigil-archival-poster.jpg?camera_label=close-up",
         "variant_ids": [
           43172
         ],
@@ -1216,8 +1216,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd2ac2763c2ff201c2ea_43172_95491_context-1",
-        "src": "https://images-api.printify.com/mockup/6aa5bd2ac2763c2ff201c2ea/43172/95491/aoife-kane-megaliths-dawn-vigil-archival-poster.jpg?camera_label=context-1",
+        "mockup_id": "6aa7a4a5533695c7070b7f16_43172_95491_context-1",
+        "src": "https://images-api.printify.com/mockup/6aa7a4a5533695c7070b7f16/43172/95491/aoife-kane-megaliths-dawn-vigil-archival-poster.jpg?camera_label=context-1",
         "variant_ids": [
           43172
         ],
@@ -1227,8 +1227,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd2ac2763c2ff201c2ea_43172_95531_context-2",
-        "src": "https://images-api.printify.com/mockup/6aa5bd2ac2763c2ff201c2ea/43172/95531/aoife-kane-megaliths-dawn-vigil-archival-poster.jpg?camera_label=context-2",
+        "mockup_id": "6aa7a4a5533695c7070b7f16_43172_95531_context-2",
+        "src": "https://images-api.printify.com/mockup/6aa7a4a5533695c7070b7f16/43172/95531/aoife-kane-megaliths-dawn-vigil-archival-poster.jpg?camera_label=context-2",
         "variant_ids": [
           43172
         ],
@@ -1238,8 +1238,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd2ac2763c2ff201c2ea_43172_95573_context-3",
-        "src": "https://images-api.printify.com/mockup/6aa5bd2ac2763c2ff201c2ea/43172/95573/aoife-kane-megaliths-dawn-vigil-archival-poster.jpg?camera_label=context-3",
+        "mockup_id": "6aa7a4a5533695c7070b7f16_43172_95573_context-3",
+        "src": "https://images-api.printify.com/mockup/6aa7a4a5533695c7070b7f16/43172/95573/aoife-kane-megaliths-dawn-vigil-archival-poster.jpg?camera_label=context-3",
         "variant_ids": [
           43172
         ],
@@ -1249,8 +1249,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd2ac2763c2ff201c2ea_43172_95617_context-4",
-        "src": "https://images-api.printify.com/mockup/6aa5bd2ac2763c2ff201c2ea/43172/95617/aoife-kane-megaliths-dawn-vigil-archival-poster.jpg?camera_label=context-4",
+        "mockup_id": "6aa7a4a5533695c7070b7f16_43172_95617_context-4",
+        "src": "https://images-api.printify.com/mockup/6aa7a4a5533695c7070b7f16/43172/95617/aoife-kane-megaliths-dawn-vigil-archival-poster.jpg?camera_label=context-4",
         "variant_ids": [
           43172
         ],
@@ -1260,8 +1260,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd2ac2763c2ff201c2ea_43172_95655_context-5",
-        "src": "https://images-api.printify.com/mockup/6aa5bd2ac2763c2ff201c2ea/43172/95655/aoife-kane-megaliths-dawn-vigil-archival-poster.jpg?camera_label=context-5",
+        "mockup_id": "6aa7a4a5533695c7070b7f16_43172_95655_context-5",
+        "src": "https://images-api.printify.com/mockup/6aa7a4a5533695c7070b7f16/43172/95655/aoife-kane-megaliths-dawn-vigil-archival-poster.jpg?camera_label=context-5",
         "variant_ids": [
           43172
         ],
@@ -1271,13 +1271,13 @@
         "order": null
       }
     ],
-    "created_at": "2026-09-12 20:59:22+00:00",
-    "updated_at": "2026-09-12 20:59:22+00:00",
+    "created_at": "2026-09-14 07:39:16+00:00",
+    "updated_at": "2026-09-14 07:39:19+00:00",
     "visible": true,
-    "is_locked": false,
+    "is_locked": true,
     "blueprint_id": 284,
     "user_id": 28198904,
-    "shop_id": 28919161,
+    "shop_id": 28933843,
     "print_provider_id": 2,
     "print_areas": [
       {
@@ -1347,7 +1347,7 @@
                 "angle": 0,
                 "src": "https://pfy-prod-image-storage.s3.us-east-2.amazonaws.com/28198904/0250f145-7308-40c1-803a-9e27253a8abd",
                 "layerType": "image",
-                "imageId": "6aa5bd2058054028ff471071_622afd7e-ec19-53aa-f8d2-420b6206e449"
+                "imageId": "6aa5bd2058054028ff471071_362f9c28-19f8-a48a-6ce7-5992f16de17a"
               }
             ],
             "decoration_method": "digital-printing"
@@ -1432,7 +1432,7 @@
     ]
   },
   {
-    "id": "6aa5bd26b6bdffef520bd683",
+    "id": "6aa7a4aa533695c7070b7f21",
     "title": "Aoife Kane - Megalith Ceremony Heavyweight Hoodie",
     "description": "Official Celtic Battle-Pop ceremonial pullover hoodie. Heavyweight 10oz fleece in pitch black.",
     "tags": [
@@ -1569,7 +1569,7 @@
     "variants": [
       {
         "id": 32878,
-        "sku": "26932022522023730610",
+        "sku": "12396915519038049716",
         "cost": 2759,
         "price": 2759,
         "title": "Dark Heather / S",
@@ -1586,7 +1586,7 @@
       },
       {
         "id": 32879,
-        "sku": "48676774141056248753",
+        "sku": "51520579030226298617",
         "cost": 2759,
         "price": 2759,
         "title": "Dark Heather / M",
@@ -1603,7 +1603,7 @@
       },
       {
         "id": 32880,
-        "sku": "32951360047004359153",
+        "sku": "23131832734601118889",
         "cost": 2759,
         "price": 2759,
         "title": "Dark Heather / L",
@@ -1620,7 +1620,7 @@
       },
       {
         "id": 32881,
-        "sku": "10746231119156316709",
+        "sku": "68706544802011952790",
         "cost": 2759,
         "price": 2759,
         "title": "Dark Heather / XL",
@@ -1637,7 +1637,7 @@
       },
       {
         "id": 32882,
-        "sku": "25260151054522254034",
+        "sku": "37354049706505303747",
         "cost": 3786,
         "price": 3786,
         "title": "Dark Heather / 2XL",
@@ -1654,7 +1654,7 @@
       },
       {
         "id": 32883,
-        "sku": "16479331231065657319",
+        "sku": "21882772927781157146",
         "cost": 4267,
         "price": 4267,
         "title": "Dark Heather / 3XL",
@@ -1671,7 +1671,7 @@
       },
       {
         "id": 32894,
-        "sku": "29312672358790198261",
+        "sku": "32469115171336981307",
         "cost": 2759,
         "price": 2759,
         "title": "Navy / S",
@@ -1688,7 +1688,7 @@
       },
       {
         "id": 32895,
-        "sku": "12708263698772845168",
+        "sku": "49008090529078408633",
         "cost": 2759,
         "price": 2759,
         "title": "Navy / M",
@@ -1705,7 +1705,7 @@
       },
       {
         "id": 32896,
-        "sku": "23254601646830532516",
+        "sku": "94533615948187378661",
         "cost": 2759,
         "price": 2759,
         "title": "Navy / L",
@@ -1722,7 +1722,7 @@
       },
       {
         "id": 32897,
-        "sku": "41111586382439838400",
+        "sku": "21267818730311748757",
         "cost": 2759,
         "price": 2759,
         "title": "Navy / XL",
@@ -1739,7 +1739,7 @@
       },
       {
         "id": 32898,
-        "sku": "83245516523498032846",
+        "sku": "20763531465150565057",
         "cost": 3786,
         "price": 3786,
         "title": "Navy / 2XL",
@@ -1756,7 +1756,7 @@
       },
       {
         "id": 32899,
-        "sku": "20865877924437888235",
+        "sku": "16273483587440807636",
         "cost": 4267,
         "price": 4267,
         "title": "Navy / 3XL",
@@ -1773,7 +1773,7 @@
       },
       {
         "id": 32902,
-        "sku": "30271032201465466541",
+        "sku": "23149390930757907586",
         "cost": 2759,
         "price": 2759,
         "title": "Sport Grey / S",
@@ -1790,7 +1790,7 @@
       },
       {
         "id": 32903,
-        "sku": "16492997904256539955",
+        "sku": "32038074003105726871",
         "cost": 2759,
         "price": 2759,
         "title": "Sport Grey / M",
@@ -1807,7 +1807,7 @@
       },
       {
         "id": 32904,
-        "sku": "13765801117169143967",
+        "sku": "12477884592970749706",
         "cost": 2759,
         "price": 2759,
         "title": "Sport Grey / L",
@@ -1824,7 +1824,7 @@
       },
       {
         "id": 32905,
-        "sku": "14597759106748943655",
+        "sku": "29122195414639235431",
         "cost": 2759,
         "price": 2759,
         "title": "Sport Grey / XL",
@@ -1841,7 +1841,7 @@
       },
       {
         "id": 32906,
-        "sku": "26749476876775521636",
+        "sku": "18361015788857343241",
         "cost": 3786,
         "price": 3786,
         "title": "Sport Grey / 2XL",
@@ -1858,7 +1858,7 @@
       },
       {
         "id": 32907,
-        "sku": "24755602071353617524",
+        "sku": "15715769501912450068",
         "cost": 4267,
         "price": 4267,
         "title": "Sport Grey / 3XL",
@@ -1875,7 +1875,7 @@
       },
       {
         "id": 32910,
-        "sku": "91891799699655613225",
+        "sku": "22865815117654620443",
         "cost": 2759,
         "price": 2759,
         "title": "White / S",
@@ -1892,7 +1892,7 @@
       },
       {
         "id": 32911,
-        "sku": "24387650874186571111",
+        "sku": "45460421619616275478",
         "cost": 2759,
         "price": 2759,
         "title": "White / M",
@@ -1909,7 +1909,7 @@
       },
       {
         "id": 32912,
-        "sku": "77050325694828215476",
+        "sku": "14573255435154364897",
         "cost": 2759,
         "price": 2759,
         "title": "White / L",
@@ -1926,7 +1926,7 @@
       },
       {
         "id": 32913,
-        "sku": "32747022528422023259",
+        "sku": "12145793086893665567",
         "cost": 2759,
         "price": 2759,
         "title": "White / XL",
@@ -1943,7 +1943,7 @@
       },
       {
         "id": 32914,
-        "sku": "20619532134544389509",
+        "sku": "22343444512672747284",
         "cost": 3786,
         "price": 3786,
         "title": "White / 2XL",
@@ -1960,7 +1960,7 @@
       },
       {
         "id": 32915,
-        "sku": "13579287159012263626",
+        "sku": "31219410816312179408",
         "cost": 4267,
         "price": 4267,
         "title": "White / 3XL",
@@ -1977,7 +1977,7 @@
       },
       {
         "id": 32918,
-        "sku": "97866372755400652453",
+        "sku": "14712199462805563544",
         "cost": 2759,
         "price": 5800,
         "title": "Black / S",
@@ -1994,7 +1994,7 @@
       },
       {
         "id": 32919,
-        "sku": "99739447198065627555",
+        "sku": "10196518168607258351",
         "cost": 2759,
         "price": 5800,
         "title": "Black / M",
@@ -2011,7 +2011,7 @@
       },
       {
         "id": 32920,
-        "sku": "77670194442261089400",
+        "sku": "27092109519461923862",
         "cost": 2759,
         "price": 5800,
         "title": "Black / L",
@@ -2028,7 +2028,7 @@
       },
       {
         "id": 32921,
-        "sku": "12588242818722621823",
+        "sku": "19057214419802990458",
         "cost": 2759,
         "price": 5800,
         "title": "Black / XL",
@@ -2045,7 +2045,7 @@
       },
       {
         "id": 32922,
-        "sku": "12057715368621061439",
+        "sku": "35124474657654923220",
         "cost": 3786,
         "price": 6200,
         "title": "Black / 2XL",
@@ -2062,7 +2062,7 @@
       },
       {
         "id": 32923,
-        "sku": "31908982776403220537",
+        "sku": "21070513385281391531",
         "cost": 4267,
         "price": 6400,
         "title": "Black / 3XL",
@@ -2079,7 +2079,7 @@
       },
       {
         "id": 33361,
-        "sku": "28955561695982062984",
+        "sku": "15839160233144745010",
         "cost": 2759,
         "price": 2759,
         "title": "Heliconia / S",
@@ -2096,7 +2096,7 @@
       },
       {
         "id": 33362,
-        "sku": "31958534726545032240",
+        "sku": "65444906505035949312",
         "cost": 2759,
         "price": 2759,
         "title": "Heliconia / M",
@@ -2113,7 +2113,7 @@
       },
       {
         "id": 33363,
-        "sku": "75178528044708920619",
+        "sku": "13758228977575992702",
         "cost": 2759,
         "price": 2759,
         "title": "Heliconia / L",
@@ -2130,7 +2130,7 @@
       },
       {
         "id": 33364,
-        "sku": "54477869216759353688",
+        "sku": "28085402276991017399",
         "cost": 2759,
         "price": 2759,
         "title": "Heliconia / XL",
@@ -2147,7 +2147,7 @@
       },
       {
         "id": 33365,
-        "sku": "23930709970615982405",
+        "sku": "17250482225320141865",
         "cost": 3786,
         "price": 3786,
         "title": "Heliconia / 2XL",
@@ -2164,7 +2164,7 @@
       },
       {
         "id": 33366,
-        "sku": "13557740699810822991",
+        "sku": "59225151934504126619",
         "cost": 4267,
         "price": 4267,
         "title": "Heliconia / 3XL",
@@ -2181,7 +2181,7 @@
       },
       {
         "id": 33385,
-        "sku": "13728697566859689829",
+        "sku": "17257390856254634942",
         "cost": 2759,
         "price": 2759,
         "title": "Red / S",
@@ -2198,7 +2198,7 @@
       },
       {
         "id": 33386,
-        "sku": "65233019788272798129",
+        "sku": "72557229729348094646",
         "cost": 2759,
         "price": 2759,
         "title": "Red / M",
@@ -2215,7 +2215,7 @@
       },
       {
         "id": 33387,
-        "sku": "12650367734137960981",
+        "sku": "69613261743603591460",
         "cost": 2759,
         "price": 2759,
         "title": "Red / L",
@@ -2232,7 +2232,7 @@
       },
       {
         "id": 33388,
-        "sku": "23782251238452003728",
+        "sku": "27124471475626709351",
         "cost": 2759,
         "price": 2759,
         "title": "Red / XL",
@@ -2249,7 +2249,7 @@
       },
       {
         "id": 33389,
-        "sku": "26648354908707231278",
+        "sku": "27473634843612091469",
         "cost": 3786,
         "price": 3786,
         "title": "Red / 2XL",
@@ -2266,7 +2266,7 @@
       },
       {
         "id": 33390,
-        "sku": "11071991971270004611",
+        "sku": "82702058593822278604",
         "cost": 4267,
         "price": 4267,
         "title": "Red / 3XL",
@@ -2283,7 +2283,7 @@
       },
       {
         "id": 33393,
-        "sku": "13119108407080748758",
+        "sku": "11073202931738614867",
         "cost": 2759,
         "price": 2759,
         "title": "Royal / S",
@@ -2300,7 +2300,7 @@
       },
       {
         "id": 33394,
-        "sku": "13462117773916110467",
+        "sku": "63589364528302790742",
         "cost": 2759,
         "price": 2759,
         "title": "Royal / M",
@@ -2317,7 +2317,7 @@
       },
       {
         "id": 33395,
-        "sku": "33320132004073579385",
+        "sku": "17794532574052955977",
         "cost": 2759,
         "price": 2759,
         "title": "Royal / L",
@@ -2334,7 +2334,7 @@
       },
       {
         "id": 33396,
-        "sku": "15463869805351140538",
+        "sku": "25830371922678737747",
         "cost": 2759,
         "price": 2759,
         "title": "Royal / XL",
@@ -2351,7 +2351,7 @@
       },
       {
         "id": 33397,
-        "sku": "21370556670700856412",
+        "sku": "12338540390175482746",
         "cost": 3786,
         "price": 3786,
         "title": "Royal / 2XL",
@@ -2368,7 +2368,7 @@
       },
       {
         "id": 33398,
-        "sku": "19863348315546405020",
+        "sku": "22316276439652955195",
         "cost": 4267,
         "price": 4267,
         "title": "Royal / 3XL",
@@ -2385,7 +2385,7 @@
       },
       {
         "id": 42164,
-        "sku": "17217478739680601680",
+        "sku": "30412103942048864703",
         "cost": 2759,
         "price": 2759,
         "title": "Sand / S",
@@ -2402,7 +2402,7 @@
       },
       {
         "id": 42165,
-        "sku": "32873630673811420563",
+        "sku": "82130231796777123713",
         "cost": 2759,
         "price": 2759,
         "title": "Sand / M",
@@ -2419,7 +2419,7 @@
       },
       {
         "id": 42166,
-        "sku": "20976157239589816509",
+        "sku": "55671089374993268999",
         "cost": 2759,
         "price": 2759,
         "title": "Sand / L",
@@ -2436,7 +2436,7 @@
       },
       {
         "id": 42167,
-        "sku": "13745617647668970564",
+        "sku": "29734006121987703969",
         "cost": 2759,
         "price": 2759,
         "title": "Sand / XL",
@@ -2453,7 +2453,7 @@
       },
       {
         "id": 42168,
-        "sku": "12531711536127303864",
+        "sku": "33277267381414857490",
         "cost": 3786,
         "price": 3786,
         "title": "Sand / 2XL",
@@ -2470,7 +2470,7 @@
       },
       {
         "id": 42169,
-        "sku": "28101422250088190383",
+        "sku": "26007471164348536056",
         "cost": 4267,
         "price": 4267,
         "title": "Sand / 3XL",
@@ -2487,7 +2487,7 @@
       },
       {
         "id": 42259,
-        "sku": "55253236058260876859",
+        "sku": "30614102694178933690",
         "cost": 2759,
         "price": 2759,
         "title": "Gold / S",
@@ -2504,7 +2504,7 @@
       },
       {
         "id": 42260,
-        "sku": "24897863857852750364",
+        "sku": "33098007546568217757",
         "cost": 2759,
         "price": 2759,
         "title": "Gold / M",
@@ -2521,7 +2521,7 @@
       },
       {
         "id": 42261,
-        "sku": "19387482068353669642",
+        "sku": "10289838750784774023",
         "cost": 2759,
         "price": 2759,
         "title": "Gold / L",
@@ -2538,7 +2538,7 @@
       },
       {
         "id": 42262,
-        "sku": "33850886486130613330",
+        "sku": "25802825350898829478",
         "cost": 2759,
         "price": 2759,
         "title": "Gold / XL",
@@ -2555,7 +2555,7 @@
       },
       {
         "id": 42263,
-        "sku": "21586231670864455871",
+        "sku": "20194742940813239580",
         "cost": 3786,
         "price": 3786,
         "title": "Gold / 2XL",
@@ -2572,7 +2572,7 @@
       },
       {
         "id": 42264,
-        "sku": "20638040947365335449",
+        "sku": "25711004615417331843",
         "cost": 4267,
         "price": 4267,
         "title": "Gold / 3XL",
@@ -2589,7 +2589,7 @@
       },
       {
         "id": 64689,
-        "sku": "13726614068519935006",
+        "sku": "19060613225216384712",
         "cost": 2759,
         "price": 2759,
         "title": "Azalea / S",
@@ -2606,7 +2606,7 @@
       },
       {
         "id": 64690,
-        "sku": "15935270331351866500",
+        "sku": "10668991566219737869",
         "cost": 2759,
         "price": 2759,
         "title": "Azalea / M",
@@ -2623,7 +2623,7 @@
       },
       {
         "id": 64691,
-        "sku": "18138863920381678678",
+        "sku": "20372171219882571144",
         "cost": 2759,
         "price": 2759,
         "title": "Azalea / L",
@@ -2640,7 +2640,7 @@
       },
       {
         "id": 64692,
-        "sku": "24066233236667344854",
+        "sku": "25503011252702522233",
         "cost": 2759,
         "price": 2759,
         "title": "Azalea / XL",
@@ -2657,7 +2657,7 @@
       },
       {
         "id": 64693,
-        "sku": "77877166029099411926",
+        "sku": "11701342499652414885",
         "cost": 3786,
         "price": 3786,
         "title": "Azalea / 2XL",
@@ -2674,7 +2674,7 @@
       },
       {
         "id": 64694,
-        "sku": "20944584367775770325",
+        "sku": "14197835419951347422",
         "cost": 4267,
         "price": 4267,
         "title": "Azalea / 3XL",
@@ -2692,8 +2692,8 @@
     ],
     "images": [
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_98424_front",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/98424/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=front",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_98424_front",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/98424/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=front",
         "variant_ids": [
           32918,
           32919,
@@ -2708,8 +2708,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_98425_back",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/98425/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=back",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_98425_back",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/98425/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=back",
         "variant_ids": [
           32918,
           32919,
@@ -2724,8 +2724,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_98426_back-2",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/98426/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=back-2",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_98426_back-2",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/98426/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=back-2",
         "variant_ids": [
           32918,
           32919,
@@ -2740,8 +2740,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_98432_folded",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/98432/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=folded",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_98432_folded",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/98432/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=folded",
         "variant_ids": [
           32918,
           32919,
@@ -2756,8 +2756,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_100685_front-collar-closeup",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/100685/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=front-collar-closeup",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_100685_front-collar-closeup",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/100685/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=front-collar-closeup",
         "variant_ids": [
           32918,
           32919,
@@ -2772,8 +2772,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_127738_front-2",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/127738/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=front-2",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_127738_front-2",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/127738/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=front-2",
         "variant_ids": [
           32918,
           32919,
@@ -2788,8 +2788,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_127688_lifestyle-2",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/127688/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=lifestyle-2",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_127688_lifestyle-2",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/127688/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=lifestyle-2",
         "variant_ids": [
           32918,
           32919,
@@ -2804,8 +2804,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_98427_person-1",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/98427/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-1",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_98427_person-1",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/98427/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-1",
         "variant_ids": [
           32918,
           32919,
@@ -2820,8 +2820,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_98428_person-2",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/98428/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-2",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_98428_person-2",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/98428/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-2",
         "variant_ids": [
           32918,
           32919,
@@ -2836,8 +2836,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_98429_person-3",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/98429/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-3",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_98429_person-3",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/98429/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-3",
         "variant_ids": [
           32918,
           32919,
@@ -2852,8 +2852,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_98430_person-4",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/98430/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-4",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_98430_person-4",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/98430/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-4",
         "variant_ids": [
           32918,
           32919,
@@ -2868,8 +2868,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_100682_person-4-back",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/100682/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-4-back",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_100682_person-4-back",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/100682/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-4-back",
         "variant_ids": [
           32918,
           32919,
@@ -2884,8 +2884,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_100683_person-5-right-sleeve",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/100683/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-5-right-sleeve",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_100683_person-5-right-sleeve",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/100683/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-5-right-sleeve",
         "variant_ids": [
           32918,
           32919,
@@ -2900,8 +2900,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_100684_person-5-left-sleeve",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/100684/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-5-left-sleeve",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_100684_person-5-left-sleeve",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/100684/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-5-left-sleeve",
         "variant_ids": [
           32918,
           32919,
@@ -2916,8 +2916,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_111847_person-6-front",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/111847/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-6-front",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_111847_person-6-front",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/111847/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-6-front",
         "variant_ids": [
           32918,
           32919,
@@ -2932,8 +2932,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_111848_person-6-back",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/111848/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-6-back",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_111848_person-6-back",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/111848/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=person-6-back",
         "variant_ids": [
           32918,
           32919,
@@ -2948,8 +2948,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_102766_lifestyle",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/102766/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=lifestyle",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_102766_lifestyle",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/102766/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=lifestyle",
         "variant_ids": [
           32918,
           32919,
@@ -2964,8 +2964,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bd26b6bdffef520bd683_32920_110151_size-chart",
-        "src": "https://images-api.printify.com/mockup/6aa5bd26b6bdffef520bd683/32920/110151/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=size-chart",
+        "mockup_id": "6aa7a4aa533695c7070b7f21_32920_110151_size-chart",
+        "src": "https://images-api.printify.com/mockup/6aa7a4aa533695c7070b7f21/32920/110151/aoife-kane-megalith-ceremony-heavyweight-hoodie.jpg?camera_label=size-chart",
         "variant_ids": [
           32918,
           32919,
@@ -2980,13 +2980,13 @@
         "order": null
       }
     ],
-    "created_at": "2026-09-12 20:59:18+00:00",
-    "updated_at": "2026-09-12 20:59:18+00:00",
+    "created_at": "2026-09-14 07:39:22+00:00",
+    "updated_at": "2026-09-14 07:39:24+00:00",
     "visible": true,
-    "is_locked": false,
+    "is_locked": true,
     "blueprint_id": 77,
     "user_id": 28198904,
-    "shop_id": 28919161,
+    "shop_id": 28933843,
     "print_provider_id": 50,
     "print_areas": [
       {
@@ -3076,7 +3076,7 @@
                 "angle": 0,
                 "src": "https://pfy-prod-image-storage.s3.us-east-2.amazonaws.com/28198904/21e53c78-527f-41f8-b8a3-6db59baf38a1",
                 "layerType": "image",
-                "imageId": "6aa5bcc78ce8faba5ed5c989_1366db83-64e6-4371-8297-f1fd9ae1855d"
+                "imageId": "6aa5bcc78ce8faba5ed5c989_42869084-7cac-a5a3-79e6-9f27346b17b4"
               }
             ],
             "decoration_method": "dtg"
@@ -4602,7 +4602,7 @@
     ]
   },
   {
-    "id": "6aa5bcd6c2763c2ff201c2ae",
+    "id": "6aa7a4af00e348554207db01",
     "title": "Aoife Kane - Hold The Line Vintage Battle Tee",
     "description": "Official Celtic Battle-Pop attire. Premium 100% combed ringspun cotton tee in black.",
     "tags": [
@@ -4782,7 +4782,7 @@
     "variants": [
       {
         "id": 18068,
-        "sku": "20802649728779948255",
+        "sku": "14736703396334833130",
         "cost": 1858,
         "price": 1858,
         "title": "Asphalt / S",
@@ -4799,7 +4799,7 @@
       },
       {
         "id": 18069,
-        "sku": "16743300930954868248",
+        "sku": "17061577047700201092",
         "cost": 1858,
         "price": 1858,
         "title": "Asphalt / M",
@@ -4816,7 +4816,7 @@
       },
       {
         "id": 18070,
-        "sku": "10619008165854677041",
+        "sku": "19171623466907963136",
         "cost": 1858,
         "price": 1858,
         "title": "Asphalt / L",
@@ -4833,7 +4833,7 @@
       },
       {
         "id": 18071,
-        "sku": "24451094140125831518",
+        "sku": "33172405176837036894",
         "cost": 1858,
         "price": 1858,
         "title": "Asphalt / XL",
@@ -4850,7 +4850,7 @@
       },
       {
         "id": 18072,
-        "sku": "11947686504091838077",
+        "sku": "24855892944029651519",
         "cost": 2217,
         "price": 2217,
         "title": "Asphalt / 2XL",
@@ -4867,7 +4867,7 @@
       },
       {
         "id": 18073,
-        "sku": "19500277050240556576",
+        "sku": "17037418441472691321",
         "cost": 2483,
         "price": 2483,
         "title": "Asphalt / 3XL",
@@ -4884,7 +4884,7 @@
       },
       {
         "id": 18084,
-        "sku": "52151451258798962906",
+        "sku": "26903052579930594675",
         "cost": 1858,
         "price": 1858,
         "title": "Baby Blue / S",
@@ -4901,7 +4901,7 @@
       },
       {
         "id": 18085,
-        "sku": "19205107888982136910",
+        "sku": "51970564222057843125",
         "cost": 1858,
         "price": 1858,
         "title": "Baby Blue / M",
@@ -4918,7 +4918,7 @@
       },
       {
         "id": 18086,
-        "sku": "61761810570491568011",
+        "sku": "22179772687814280355",
         "cost": 1858,
         "price": 1858,
         "title": "Baby Blue / L",
@@ -4935,7 +4935,7 @@
       },
       {
         "id": 18087,
-        "sku": "30601366056540655537",
+        "sku": "25603343755553312924",
         "cost": 1858,
         "price": 1858,
         "title": "Baby Blue / XL",
@@ -4952,7 +4952,7 @@
       },
       {
         "id": 18088,
-        "sku": "18679943954137046735",
+        "sku": "43743792416578996884",
         "cost": 2217,
         "price": 2217,
         "title": "Baby Blue / 2XL",
@@ -4969,7 +4969,7 @@
       },
       {
         "id": 18089,
-        "sku": "14317354678941064531",
+        "sku": "25928863773596820284",
         "cost": 2483,
         "price": 2483,
         "title": "Baby Blue / 3XL",
@@ -4986,7 +4986,7 @@
       },
       {
         "id": 18100,
-        "sku": "30562178461088247954",
+        "sku": "28539025469736777932",
         "cost": 1858,
         "price": 3400,
         "title": "Black / S",
@@ -5003,7 +5003,7 @@
       },
       {
         "id": 18101,
-        "sku": "27701125744791076053",
+        "sku": "78504150592416589119",
         "cost": 1858,
         "price": 3400,
         "title": "Black / M",
@@ -5020,7 +5020,7 @@
       },
       {
         "id": 18102,
-        "sku": "13283606801087867431",
+        "sku": "26145015473127543289",
         "cost": 1858,
         "price": 3400,
         "title": "Black / L",
@@ -5037,7 +5037,7 @@
       },
       {
         "id": 18103,
-        "sku": "22194598383620483240",
+        "sku": "24138560990048370364",
         "cost": 1858,
         "price": 3400,
         "title": "Black / XL",
@@ -5054,7 +5054,7 @@
       },
       {
         "id": 18104,
-        "sku": "87924331154279598307",
+        "sku": "26212176907314731023",
         "cost": 2217,
         "price": 3400,
         "title": "Black / 2XL",
@@ -5071,7 +5071,7 @@
       },
       {
         "id": 18105,
-        "sku": "58481838855958608149",
+        "sku": "28604891598767951918",
         "cost": 2483,
         "price": 3600,
         "title": "Black / 3XL",
@@ -5088,7 +5088,7 @@
       },
       {
         "id": 18140,
-        "sku": "37484405206783748277",
+        "sku": "19372090652914297212",
         "cost": 1858,
         "price": 1858,
         "title": "Dark Grey / S",
@@ -5105,7 +5105,7 @@
       },
       {
         "id": 18141,
-        "sku": "33198070389191893262",
+        "sku": "27496485087419469937",
         "cost": 1858,
         "price": 1858,
         "title": "Dark Grey / M",
@@ -5122,7 +5122,7 @@
       },
       {
         "id": 18142,
-        "sku": "24873693081477454250",
+        "sku": "22263701085490000985",
         "cost": 1858,
         "price": 1858,
         "title": "Dark Grey / L",
@@ -5139,7 +5139,7 @@
       },
       {
         "id": 18143,
-        "sku": "28057941927078450136",
+        "sku": "29832191254994987800",
         "cost": 1858,
         "price": 1858,
         "title": "Dark Grey / XL",
@@ -5156,7 +5156,7 @@
       },
       {
         "id": 18144,
-        "sku": "32397005522655177301",
+        "sku": "11909443243036231648",
         "cost": 2217,
         "price": 2217,
         "title": "Dark Grey / 2XL",
@@ -5173,7 +5173,7 @@
       },
       {
         "id": 18145,
-        "sku": "26055437728785344580",
+        "sku": "44352057276254616438",
         "cost": 2483,
         "price": 2483,
         "title": "Dark Grey / 3XL",
@@ -5190,7 +5190,7 @@
       },
       {
         "id": 18180,
-        "sku": "96982932783098205452",
+        "sku": "85339214988646039945",
         "cost": 1858,
         "price": 1858,
         "title": "Forest / S",
@@ -5207,7 +5207,7 @@
       },
       {
         "id": 18181,
-        "sku": "26062046408267480448",
+        "sku": "24747906363829465622",
         "cost": 1858,
         "price": 1858,
         "title": "Forest / M",
@@ -5224,7 +5224,7 @@
       },
       {
         "id": 18182,
-        "sku": "32160886332206571199",
+        "sku": "29878767437410078122",
         "cost": 1858,
         "price": 1858,
         "title": "Forest / L",
@@ -5241,7 +5241,7 @@
       },
       {
         "id": 18183,
-        "sku": "47895552227100209515",
+        "sku": "10825292210598190247",
         "cost": 1858,
         "price": 1858,
         "title": "Forest / XL",
@@ -5258,7 +5258,7 @@
       },
       {
         "id": 18184,
-        "sku": "60307736104173113656",
+        "sku": "30144748857016060675",
         "cost": 2217,
         "price": 2217,
         "title": "Forest / 2XL",
@@ -5275,7 +5275,7 @@
       },
       {
         "id": 18185,
-        "sku": "24356232243574097201",
+        "sku": "19208758920140230401",
         "cost": 2483,
         "price": 2483,
         "title": "Forest / 3XL",
@@ -5292,7 +5292,7 @@
       },
       {
         "id": 18340,
-        "sku": "37866063567770504072",
+        "sku": "33292148371986439838",
         "cost": 1858,
         "price": 1858,
         "title": "Kelly / S",
@@ -5309,7 +5309,7 @@
       },
       {
         "id": 18341,
-        "sku": "66978284064588794621",
+        "sku": "10057233007696386156",
         "cost": 1858,
         "price": 1858,
         "title": "Kelly / M",
@@ -5326,7 +5326,7 @@
       },
       {
         "id": 18342,
-        "sku": "14222397225367935230",
+        "sku": "44351366764928142990",
         "cost": 1858,
         "price": 1858,
         "title": "Kelly / L",
@@ -5343,7 +5343,7 @@
       },
       {
         "id": 18343,
-        "sku": "16268873779731179772",
+        "sku": "27949139566954551082",
         "cost": 1858,
         "price": 1858,
         "title": "Kelly / XL",
@@ -5360,7 +5360,7 @@
       },
       {
         "id": 18344,
-        "sku": "13780790759842504123",
+        "sku": "20142051443188550526",
         "cost": 2217,
         "price": 2217,
         "title": "Kelly / 2XL",
@@ -5377,7 +5377,7 @@
       },
       {
         "id": 18345,
-        "sku": "85951497027961911824",
+        "sku": "17460555378491017095",
         "cost": 2483,
         "price": 2483,
         "title": "Kelly / 3XL",
@@ -5394,7 +5394,7 @@
       },
       {
         "id": 18372,
-        "sku": "31335872683048119412",
+        "sku": "80519860321780072838",
         "cost": 1858,
         "price": 1858,
         "title": "Maroon / S",
@@ -5411,7 +5411,7 @@
       },
       {
         "id": 18373,
-        "sku": "31324415376303647998",
+        "sku": "22096464657178003832",
         "cost": 1858,
         "price": 1858,
         "title": "Maroon / M",
@@ -5428,7 +5428,7 @@
       },
       {
         "id": 18374,
-        "sku": "27105018983734600807",
+        "sku": "24054693526513187599",
         "cost": 1858,
         "price": 1858,
         "title": "Maroon / L",
@@ -5445,7 +5445,7 @@
       },
       {
         "id": 18375,
-        "sku": "10368694071035420996",
+        "sku": "27038422936311682221",
         "cost": 1858,
         "price": 1858,
         "title": "Maroon / XL",
@@ -5462,7 +5462,7 @@
       },
       {
         "id": 18376,
-        "sku": "14940126796204364677",
+        "sku": "29819277657057853661",
         "cost": 2217,
         "price": 2217,
         "title": "Maroon / 2XL",
@@ -5479,7 +5479,7 @@
       },
       {
         "id": 18377,
-        "sku": "21593881900528895368",
+        "sku": "93895932505669339744",
         "cost": 2483,
         "price": 2483,
         "title": "Maroon / 3XL",
@@ -5496,7 +5496,7 @@
       },
       {
         "id": 18396,
-        "sku": "31323203335350210658",
+        "sku": "31681120774172828913",
         "cost": 1858,
         "price": 1858,
         "title": "Navy / S",
@@ -5513,7 +5513,7 @@
       },
       {
         "id": 18397,
-        "sku": "30489178881750274411",
+        "sku": "15611488105849175233",
         "cost": 1858,
         "price": 1858,
         "title": "Navy / M",
@@ -5530,7 +5530,7 @@
       },
       {
         "id": 18398,
-        "sku": "48776622317429827341",
+        "sku": "33417013859185560164",
         "cost": 1858,
         "price": 1858,
         "title": "Navy / L",
@@ -5547,7 +5547,7 @@
       },
       {
         "id": 18399,
-        "sku": "24213497986488822724",
+        "sku": "29347293523022569632",
         "cost": 1858,
         "price": 1858,
         "title": "Navy / XL",
@@ -5564,7 +5564,7 @@
       },
       {
         "id": 18400,
-        "sku": "18257149947671367437",
+        "sku": "21085998481637145979",
         "cost": 2217,
         "price": 2217,
         "title": "Navy / 2XL",
@@ -5581,7 +5581,7 @@
       },
       {
         "id": 18401,
-        "sku": "25773810282317425514",
+        "sku": "15776957928269156095",
         "cost": 2483,
         "price": 2483,
         "title": "Navy / 3XL",
@@ -5598,7 +5598,7 @@
       },
       {
         "id": 18412,
-        "sku": "13616907276045415728",
+        "sku": "14364867762027116028",
         "cost": 1858,
         "price": 1858,
         "title": "Olive / S",
@@ -5615,7 +5615,7 @@
       },
       {
         "id": 18413,
-        "sku": "88361280127600497648",
+        "sku": "24168012493606471006",
         "cost": 1858,
         "price": 1858,
         "title": "Olive / M",
@@ -5632,7 +5632,7 @@
       },
       {
         "id": 18414,
-        "sku": "18150779662288847634",
+        "sku": "22794627997346322939",
         "cost": 1858,
         "price": 1858,
         "title": "Olive / L",
@@ -5649,7 +5649,7 @@
       },
       {
         "id": 18415,
-        "sku": "92716115815177884777",
+        "sku": "87545725679202786928",
         "cost": 1858,
         "price": 1858,
         "title": "Olive / XL",
@@ -5666,7 +5666,7 @@
       },
       {
         "id": 18416,
-        "sku": "27912773205207561350",
+        "sku": "31071192223769865364",
         "cost": 2217,
         "price": 2217,
         "title": "Olive / 2XL",
@@ -5683,7 +5683,7 @@
       },
       {
         "id": 18417,
-        "sku": "14604083785568487828",
+        "sku": "13657219399306481035",
         "cost": 2483,
         "price": 2483,
         "title": "Olive / 3XL",
@@ -5700,7 +5700,7 @@
       },
       {
         "id": 18420,
-        "sku": "71116152457877097377",
+        "sku": "24024650309520835026",
         "cost": 1858,
         "price": 1858,
         "title": "Orange / S",
@@ -5717,7 +5717,7 @@
       },
       {
         "id": 18421,
-        "sku": "23467378374279064135",
+        "sku": "23993542804533038137",
         "cost": 1858,
         "price": 1858,
         "title": "Orange / M",
@@ -5734,7 +5734,7 @@
       },
       {
         "id": 18422,
-        "sku": "99644012603128279023",
+        "sku": "33383141960554714651",
         "cost": 1858,
         "price": 1858,
         "title": "Orange / L",
@@ -5751,7 +5751,7 @@
       },
       {
         "id": 18423,
-        "sku": "32526240502070080608",
+        "sku": "16478996096631778552",
         "cost": 1858,
         "price": 1858,
         "title": "Orange / XL",
@@ -5768,7 +5768,7 @@
       },
       {
         "id": 18424,
-        "sku": "82752085566379426036",
+        "sku": "24102630298474893625",
         "cost": 2217,
         "price": 2217,
         "title": "Orange / 2XL",
@@ -5785,7 +5785,7 @@
       },
       {
         "id": 18425,
-        "sku": "23102527998346133889",
+        "sku": "10726268577874505920",
         "cost": 2483,
         "price": 2483,
         "title": "Orange / 3XL",
@@ -5802,7 +5802,7 @@
       },
       {
         "id": 18436,
-        "sku": "55821107877959650008",
+        "sku": "29886515729917104515",
         "cost": 1858,
         "price": 1858,
         "title": "Pink / S",
@@ -5819,7 +5819,7 @@
       },
       {
         "id": 18437,
-        "sku": "13828040208795221998",
+        "sku": "27222277150913512754",
         "cost": 1858,
         "price": 1858,
         "title": "Pink / M",
@@ -5836,7 +5836,7 @@
       },
       {
         "id": 18438,
-        "sku": "23133437018476920460",
+        "sku": "22024739462768667180",
         "cost": 1858,
         "price": 1858,
         "title": "Pink / L",
@@ -5853,7 +5853,7 @@
       },
       {
         "id": 18439,
-        "sku": "17209164333502151908",
+        "sku": "29324595928722054412",
         "cost": 1858,
         "price": 1858,
         "title": "Pink / XL",
@@ -5870,7 +5870,7 @@
       },
       {
         "id": 18440,
-        "sku": "33559168948217538189",
+        "sku": "38568633199421591428",
         "cost": 2217,
         "price": 2217,
         "title": "Pink / 2XL",
@@ -5887,7 +5887,7 @@
       },
       {
         "id": 18441,
-        "sku": "11545297488842446399",
+        "sku": "24536746975139366378",
         "cost": 2483,
         "price": 2483,
         "title": "Pink / 3XL",
@@ -5904,7 +5904,7 @@
       },
       {
         "id": 18444,
-        "sku": "16459388797795868039",
+        "sku": "32229960203259780671",
         "cost": 1858,
         "price": 1858,
         "title": "Red / S",
@@ -5921,7 +5921,7 @@
       },
       {
         "id": 18445,
-        "sku": "32283735249816555919",
+        "sku": "33752948934692046911",
         "cost": 1858,
         "price": 1858,
         "title": "Red / M",
@@ -5938,7 +5938,7 @@
       },
       {
         "id": 18446,
-        "sku": "33449735023095659646",
+        "sku": "26825833421639604904",
         "cost": 1858,
         "price": 1858,
         "title": "Red / L",
@@ -5955,7 +5955,7 @@
       },
       {
         "id": 18447,
-        "sku": "26618930016557525479",
+        "sku": "23287763395020981624",
         "cost": 1858,
         "price": 1858,
         "title": "Red / XL",
@@ -5972,7 +5972,7 @@
       },
       {
         "id": 18448,
-        "sku": "14222324805147134916",
+        "sku": "27431463882130698475",
         "cost": 2217,
         "price": 2217,
         "title": "Red / 2XL",
@@ -5989,7 +5989,7 @@
       },
       {
         "id": 18449,
-        "sku": "13347214525131605980",
+        "sku": "16584112183705476147",
         "cost": 2483,
         "price": 2483,
         "title": "Red / 3XL",
@@ -6006,7 +6006,7 @@
       },
       {
         "id": 18508,
-        "sku": "23213382193597018595",
+        "sku": "17986792704885878636",
         "cost": 1858,
         "price": 1858,
         "title": "Team Purple / S",
@@ -6023,7 +6023,7 @@
       },
       {
         "id": 18509,
-        "sku": "46986484934914595983",
+        "sku": "25711644912130967058",
         "cost": 1858,
         "price": 1858,
         "title": "Team Purple / M",
@@ -6040,7 +6040,7 @@
       },
       {
         "id": 18510,
-        "sku": "13192419277458785298",
+        "sku": "78379278127263898403",
         "cost": 1858,
         "price": 1858,
         "title": "Team Purple / L",
@@ -6057,7 +6057,7 @@
       },
       {
         "id": 18511,
-        "sku": "10084832639048324434",
+        "sku": "79624050677836676823",
         "cost": 1858,
         "price": 1858,
         "title": "Team Purple / XL",
@@ -6074,7 +6074,7 @@
       },
       {
         "id": 18512,
-        "sku": "17600517477765971615",
+        "sku": "97276575670965623319",
         "cost": 2217,
         "price": 2217,
         "title": "Team Purple / 2XL",
@@ -6091,7 +6091,7 @@
       },
       {
         "id": 18513,
-        "sku": "14389676134994295772",
+        "sku": "92256671203693318827",
         "cost": 2483,
         "price": 2483,
         "title": "Team Purple / 3XL",
@@ -6108,7 +6108,7 @@
       },
       {
         "id": 18516,
-        "sku": "74095991042871710865",
+        "sku": "14805119180554958620",
         "cost": 1858,
         "price": 1858,
         "title": "True Royal / S",
@@ -6125,7 +6125,7 @@
       },
       {
         "id": 18517,
-        "sku": "41414174629535523748",
+        "sku": "44768514155886737850",
         "cost": 1858,
         "price": 1858,
         "title": "True Royal / M",
@@ -6142,7 +6142,7 @@
       },
       {
         "id": 18518,
-        "sku": "15957897482713809156",
+        "sku": "12315964181068666226",
         "cost": 1858,
         "price": 1858,
         "title": "True Royal / L",
@@ -6159,7 +6159,7 @@
       },
       {
         "id": 18519,
-        "sku": "70151547678527456742",
+        "sku": "19331199791846472922",
         "cost": 1858,
         "price": 1858,
         "title": "True Royal / XL",
@@ -6176,7 +6176,7 @@
       },
       {
         "id": 18520,
-        "sku": "27663585464546045284",
+        "sku": "11670879996484957718",
         "cost": 2217,
         "price": 2217,
         "title": "True Royal / 2XL",
@@ -6193,7 +6193,7 @@
       },
       {
         "id": 18521,
-        "sku": "11121230858617707537",
+        "sku": "25880682471152862606",
         "cost": 2483,
         "price": 2483,
         "title": "True Royal / 3XL",
@@ -6210,7 +6210,7 @@
       },
       {
         "id": 18540,
-        "sku": "29319477958937156550",
+        "sku": "34010010159847594549",
         "cost": 1858,
         "price": 1858,
         "title": "White / S",
@@ -6227,7 +6227,7 @@
       },
       {
         "id": 18541,
-        "sku": "14862177299797416848",
+        "sku": "66425041630958060958",
         "cost": 1858,
         "price": 1858,
         "title": "White / M",
@@ -6244,7 +6244,7 @@
       },
       {
         "id": 18542,
-        "sku": "11526795000050902526",
+        "sku": "29578768127174805619",
         "cost": 1858,
         "price": 1858,
         "title": "White / L",
@@ -6261,7 +6261,7 @@
       },
       {
         "id": 18543,
-        "sku": "27936678387600396694",
+        "sku": "87525800007394358252",
         "cost": 1858,
         "price": 1858,
         "title": "White / XL",
@@ -6278,7 +6278,7 @@
       },
       {
         "id": 18544,
-        "sku": "14871468082658223284",
+        "sku": "14328087872749973876",
         "cost": 2217,
         "price": 2217,
         "title": "White / 2XL",
@@ -6295,7 +6295,7 @@
       },
       {
         "id": 18545,
-        "sku": "11506017601535227955",
+        "sku": "33859740509906138390",
         "cost": 2483,
         "price": 2483,
         "title": "White / 3XL",
@@ -6312,7 +6312,7 @@
       },
       {
         "id": 18548,
-        "sku": "24207720953126361443",
+        "sku": "12995784856426008471",
         "cost": 1858,
         "price": 1858,
         "title": "Yellow / S",
@@ -6329,7 +6329,7 @@
       },
       {
         "id": 18549,
-        "sku": "23497393348800730575",
+        "sku": "18869973919078642371",
         "cost": 1858,
         "price": 1858,
         "title": "Yellow / M",
@@ -6346,7 +6346,7 @@
       },
       {
         "id": 18550,
-        "sku": "11985128941732278510",
+        "sku": "25641520451627023882",
         "cost": 1858,
         "price": 1858,
         "title": "Yellow / L",
@@ -6363,7 +6363,7 @@
       },
       {
         "id": 18551,
-        "sku": "10860406355282568484",
+        "sku": "14218666016655834533",
         "cost": 1858,
         "price": 1858,
         "title": "Yellow / XL",
@@ -6380,7 +6380,7 @@
       },
       {
         "id": 18552,
-        "sku": "97679740253466532571",
+        "sku": "76387634416952245581",
         "cost": 2217,
         "price": 2217,
         "title": "Yellow / 2XL",
@@ -6397,7 +6397,7 @@
       },
       {
         "id": 18553,
-        "sku": "26268645568914692085",
+        "sku": "31193830986568720677",
         "cost": 2483,
         "price": 2483,
         "title": "Yellow / 3XL",
@@ -6414,7 +6414,7 @@
       },
       {
         "id": 38602,
-        "sku": "11333017206371393773",
+        "sku": "68347216691268876349",
         "cost": 1858,
         "price": 1858,
         "title": "Ash / S",
@@ -6431,7 +6431,7 @@
       },
       {
         "id": 38605,
-        "sku": "71558559407182276912",
+        "sku": "70012271700553695420",
         "cost": 1858,
         "price": 1858,
         "title": "Ash / M",
@@ -6448,7 +6448,7 @@
       },
       {
         "id": 38608,
-        "sku": "31882622022000869088",
+        "sku": "24898739955464567082",
         "cost": 1858,
         "price": 1858,
         "title": "Ash / L",
@@ -6465,7 +6465,7 @@
       },
       {
         "id": 38611,
-        "sku": "75189707748677600257",
+        "sku": "85749367489080881862",
         "cost": 1858,
         "price": 1858,
         "title": "Ash / XL",
@@ -6482,7 +6482,7 @@
       },
       {
         "id": 38614,
-        "sku": "21805564360004064675",
+        "sku": "62572518814354094453",
         "cost": 2217,
         "price": 2217,
         "title": "Ash / 2XL",
@@ -6499,7 +6499,7 @@
       },
       {
         "id": 38617,
-        "sku": "12124249231112998875",
+        "sku": "19479384286570285912",
         "cost": 2483,
         "price": 2483,
         "title": "Ash / 3XL",
@@ -6517,8 +6517,8 @@
     ],
     "images": [
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_102044_front-2",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/102044/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=front-2",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_102044_front-2",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/102044/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=front-2",
         "variant_ids": [
           18100,
           18101,
@@ -6533,8 +6533,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_102045_back-2",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/102045/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=back-2",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_102045_back-2",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/102045/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=back-2",
         "variant_ids": [
           18100,
           18101,
@@ -6549,8 +6549,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_102046_folded",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/102046/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=folded",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_102046_folded",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/102046/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=folded",
         "variant_ids": [
           18100,
           18101,
@@ -6565,8 +6565,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_102048_hanging-1",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/102048/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=hanging-1",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_102048_hanging-1",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/102048/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=hanging-1",
         "variant_ids": [
           18100,
           18101,
@@ -6581,8 +6581,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_102047_hanging-2",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/102047/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=hanging-2",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_102047_hanging-2",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/102047/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=hanging-2",
         "variant_ids": [
           18100,
           18101,
@@ -6597,8 +6597,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_102049_hanging-3",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/102049/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=hanging-3",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_102049_hanging-3",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/102049/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=hanging-3",
         "variant_ids": [
           18100,
           18101,
@@ -6613,8 +6613,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_92735_front-collar-closeup",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/92735/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=front-collar-closeup",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_92735_front-collar-closeup",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/92735/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=front-collar-closeup",
         "variant_ids": [
           18100,
           18101,
@@ -6629,8 +6629,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_92736_back-collar-closeup",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/92736/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=back-collar-closeup",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_92736_back-collar-closeup",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/92736/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=back-collar-closeup",
         "variant_ids": [
           18100,
           18101,
@@ -6645,8 +6645,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_92578_person-1",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/92578/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-1",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_92578_person-1",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/92578/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-1",
         "variant_ids": [
           18100,
           18101,
@@ -6661,8 +6661,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_92579_person-2",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/92579/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-2",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_92579_person-2",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/92579/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-2",
         "variant_ids": [
           18100,
           18101,
@@ -6677,8 +6677,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_92580_person-3",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/92580/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-3",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_92580_person-3",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/92580/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-3",
         "variant_ids": [
           18100,
           18101,
@@ -6693,8 +6693,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_92581_person-4",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/92581/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-4",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_92581_person-4",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/92581/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-4",
         "variant_ids": [
           18100,
           18101,
@@ -6709,8 +6709,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_92582_person-5",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/92582/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-5",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_92582_person-5",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/92582/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-5",
         "variant_ids": [
           18100,
           18101,
@@ -6725,8 +6725,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_92583_person-6",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/92583/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-6",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_92583_person-6",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/92583/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-6",
         "variant_ids": [
           18100,
           18101,
@@ -6741,8 +6741,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_102054_person-6-back",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/102054/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-6-back",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_102054_person-6-back",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/102054/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-6-back",
         "variant_ids": [
           18100,
           18101,
@@ -6757,8 +6757,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_102057_person-7-front",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/102057/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-7-front",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_102057_person-7-front",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/102057/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-7-front",
         "variant_ids": [
           18100,
           18101,
@@ -6773,8 +6773,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_102058_person-7-back",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/102058/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-7-back",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_102058_person-7-back",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/102058/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-7-back",
         "variant_ids": [
           18100,
           18101,
@@ -6789,8 +6789,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_102059_person-8-front",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/102059/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-8-front",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_102059_person-8-front",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/102059/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-8-front",
         "variant_ids": [
           18100,
           18101,
@@ -6805,8 +6805,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_102060_person-8-back",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/102060/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-8-back",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_102060_person-8-back",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/102060/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-8-back",
         "variant_ids": [
           18100,
           18101,
@@ -6821,8 +6821,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_102061_person-9-front",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/102061/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-9-front",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_102061_person-9-front",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/102061/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-9-front",
         "variant_ids": [
           18100,
           18101,
@@ -6837,8 +6837,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_102062_person-9-back",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/102062/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-9-back",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_102062_person-9-back",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/102062/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-9-back",
         "variant_ids": [
           18100,
           18101,
@@ -6853,8 +6853,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_92584_lifestyle",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/92584/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=lifestyle",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_92584_lifestyle",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/92584/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=lifestyle",
         "variant_ids": [
           18100,
           18101,
@@ -6869,8 +6869,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_92585_duo",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/92585/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=duo",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_92585_duo",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/92585/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=duo",
         "variant_ids": [
           18100,
           18101,
@@ -6885,8 +6885,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_102051_duo-2",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/102051/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=duo-2",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_102051_duo-2",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/102051/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=duo-2",
         "variant_ids": [
           18100,
           18101,
@@ -6901,8 +6901,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_102052_duo-3",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/102052/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=duo-3",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_102052_duo-3",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/102052/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=duo-3",
         "variant_ids": [
           18100,
           18101,
@@ -6917,8 +6917,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_102053_duo-4",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/102053/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=duo-4",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_102053_duo-4",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/102053/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=duo-4",
         "variant_ids": [
           18100,
           18101,
@@ -6933,8 +6933,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_111785_person-10-left-sleeve",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/111785/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-10-left-sleeve",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_111785_person-10-left-sleeve",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/111785/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-10-left-sleeve",
         "variant_ids": [
           18100,
           18101,
@@ -6949,8 +6949,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_111786_person-10-right-sleeve",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/111786/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-10-right-sleeve",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_111786_person-10-right-sleeve",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/111786/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-10-right-sleeve",
         "variant_ids": [
           18100,
           18101,
@@ -6965,8 +6965,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_111787_person-11-left-sleeve",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/111787/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-11-left-sleeve",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_111787_person-11-left-sleeve",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/111787/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-11-left-sleeve",
         "variant_ids": [
           18100,
           18101,
@@ -6981,8 +6981,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_111788_person-11-right-sleeve",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/111788/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-11-right-sleeve",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_111788_person-11-right-sleeve",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/111788/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=person-11-right-sleeve",
         "variant_ids": [
           18100,
           18101,
@@ -6997,8 +6997,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_92547_front",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/92547/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=front",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_92547_front",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/92547/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=front",
         "variant_ids": [
           18100,
           18101,
@@ -7013,8 +7013,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_92720_back",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/92720/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=back",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_92720_back",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/92720/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=back",
         "variant_ids": [
           18100,
           18101,
@@ -7029,8 +7029,8 @@
         "order": null
       },
       {
-        "mockup_id": "6aa5bcd6c2763c2ff201c2ae_18102_102050_size-chart",
-        "src": "https://images-api.printify.com/mockup/6aa5bcd6c2763c2ff201c2ae/18102/102050/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=size-chart",
+        "mockup_id": "6aa7a4af00e348554207db01_18102_102050_size-chart",
+        "src": "https://images-api.printify.com/mockup/6aa7a4af00e348554207db01/18102/102050/aoife-kane-hold-the-line-vintage-battle-tee.jpg?camera_label=size-chart",
         "variant_ids": [
           18100,
           18101,
@@ -7045,13 +7045,13 @@
         "order": null
       }
     ],
-    "created_at": "2026-09-12 20:57:58+00:00",
-    "updated_at": "2026-09-12 20:57:58+00:00",
+    "created_at": "2026-09-14 07:39:27+00:00",
+    "updated_at": "2026-09-14 07:39:34+00:00",
     "visible": true,
-    "is_locked": false,
+    "is_locked": true,
     "blueprint_id": 12,
     "user_id": 28198904,
-    "shop_id": 28919161,
+    "shop_id": 28933843,
     "print_provider_id": 41,
     "print_areas": [
       {
@@ -7177,7 +7177,7 @@
                 "angle": 0,
                 "src": "https://pfy-prod-image-storage.s3.us-east-2.amazonaws.com/28198904/21e53c78-527f-41f8-b8a3-6db59baf38a1",
                 "layerType": "image",
-                "imageId": "6aa5bcc78ce8faba5ed5c989_285f763c-b0a1-f948-e36c-1d6384731431"
+                "imageId": "6aa5bcc78ce8faba5ed5c989_b828b3f9-85f3-3fa8-4460-eddecc793f23"
               }
             ],
             "decoration_method": "dtg"
