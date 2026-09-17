@@ -252,15 +252,6 @@
       desc: "10oz heavyweight fleece pullover in pitch black with double-layer hood and front kangaroo pocket.",
       tag: "10oz Heavyweight Fleece"
     },
-    poster: {
-      productId: "6aa7a4a5533695c7070b7f16",
-      defaultVariantId: 43172,
-      title: "Ancient Megaliths Dawn Vigil Poster (24\" x 18\")",
-      price: 24,
-      sizes: null,
-      desc: "Museum-grade heavy matte 175gsm archival art print of Aoife Kane standing before ancient stone monoliths.",
-      tag: "Museum-Grade Matte Giclée"
-    },
     mug: {
       productId: "6aa7a4a1533695c7070b7f13",
       defaultVariantId: 33719,
