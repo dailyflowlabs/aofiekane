@@ -591,6 +591,112 @@
     });
   })();
 
+  // --- 8. CINEMATIC VIDEO PLAYER MODAL CONTROLLER (HTML5 DIALOG) ---
+  const videoModal = document.getElementById('videoModal');
+  const videoModalContainer = document.getElementById('modalVideoContainer');
+  const videoModalTitle = document.getElementById('modalVideoTitle');
+  const videoModalDesc = document.getElementById('modalVideoDesc');
+  const videoModalCloseBtn = document.getElementById('videoModalCloseBtn');
+  const videoModalCloseFooterBtn = document.getElementById('videoModalCloseFooterBtn');
+  const modalYouTubeLink = document.getElementById('modalYouTubeLink');
+
+  function openVideoModal(videoSrc, title, desc) {
+    if (!videoModal || !videoModalContainer) return;
+
+    // Pause audio player if running so sounds don't overlap
+    if (window.AoifePlayer && typeof window.AoifePlayer.pause === 'function') {
+      window.AoifePlayer.pause();
+    }
+
+    if (videoModalTitle) videoModalTitle.textContent = title || 'Aoife Kane — CALL THE CLANS (Official Music Video)';
+    if (videoModalDesc) videoModalDesc.textContent = desc || 'Official Music Video • 4K Master • Scottish Sea Cliffs';
+
+    const src = videoSrc || 'https://www.youtube.com/watch?v=5bW1UMLpxvI';
+    const isYouTube = src.includes('youtube.com') || src.includes('youtu.be');
+
+    if (isYouTube) {
+      let videoId = '5bW1UMLpxvI';
+      if (src.includes('watch?v=')) {
+        videoId = src.split('watch?v=')[1].split('&')[0];
+      } else if (src.includes('youtu.be/')) {
+        videoId = src.split('youtu.be/')[1].split('?')[0];
+      } else if (src.includes('/embed/')) {
+        videoId = src.split('/embed/')[1].split('?')[0];
+      }
+
+      if (modalYouTubeLink) {
+        modalYouTubeLink.href = `https://youtu.be/${videoId}`;
+      }
+
+      videoModalContainer.innerHTML = `
+        <iframe 
+          src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1" 
+          title="${title || 'Aoife Kane Video'}" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+      `;
+    } else {
+      videoModalContainer.innerHTML = `
+        <video src="${src}" controls autoplay playsinline style="width:100%;height:100%;object-fit:cover;"></video>
+      `;
+    }
+
+    videoModal.showModal();
+  }
+
+  function closeVideoModal() {
+    if (!videoModal) return;
+    if (videoModalContainer) {
+      videoModalContainer.innerHTML = '';
+    }
+    videoModal.close();
+  }
+
+  if (videoModalCloseBtn) {
+    videoModalCloseBtn.addEventListener('click', closeVideoModal);
+  }
+  if (videoModalCloseFooterBtn) {
+    videoModalCloseFooterBtn.addEventListener('click', closeVideoModal);
+  }
+
+  if (videoModal) {
+    videoModal.addEventListener('click', (e) => {
+      const rect = videoModal.getBoundingClientRect();
+      const clickedInside = (
+        e.clientX >= rect.left &&
+        e.clientX <= rect.right &&
+        e.clientY >= rect.top &&
+        e.clientY <= rect.bottom
+      );
+      if (!clickedInside || e.target === videoModal) {
+        closeVideoModal();
+      }
+    });
+
+    videoModal.addEventListener('cancel', () => {
+      closeVideoModal();
+    });
+  }
+
+  // Click triggers on elements with data-video-src or #openVideoModalBtn
+  document.querySelectorAll('[data-video-src], #openVideoModalBtn').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const src = el.getAttribute('data-video-src') || 'https://www.youtube.com/watch?v=5bW1UMLpxvI';
+      const title = el.getAttribute('data-video-title');
+      const desc = el.getAttribute('data-video-desc');
+      openVideoModal(src, title, desc);
+    });
+  });
+
+  window.AoifeVideoModal = {
+    open: openVideoModal,
+    close: closeVideoModal
+  };
+
   // Expose modal helper
   window.AoifeModals = {
     open: openCustomModal,
